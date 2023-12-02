@@ -1,0 +1,126 @@
+~~~KEYBOEARD&MOUSE~~~
+
+unbindall
+
+//Analog bindings
+bind "X_AXIS" "rightleft"	
+bind "Y_AXIS" "!forwardback"
+bind "MOUSE_X" "yaw"
+bind "MOUSE_Y" "pitch"
+bind "U_AXIS" "yaw"
+bind "R_AXIS" "pitch"
+
+//Movement keys
+bind "W" "+forward"                                               //Move forward
+bind "S" "+back; -forward-jump"                                   //Move backward (press the key if you keep running after FORWARD-THROW or FORWARD-JUMP-THROW binds)
+bind "A" "+left"                                                  //Move left (strafe)
+bind "D" "+right"                                                 //Move rightT (strafe)
+bind "SHIFT" "+sprint"                                            //Walk
+bind "CTRL" "+duck"                                               //Duck
+bind "MWHEELUP" "+jump"                                           //Jump
+
+//Weapon keys
+bind "E" "+use"                                                   //Use
+bind "MOUSE1" "+attack"                                           //Fire
+bind "MOUSE2" "+attack2"                                          //Secondary fire
+bind "R" "+reload"                                                //Reload
+bind "MWHEELDOWN" "invnext; nade_mode_false"                      //Select next weapon
+bind "Q" "+lastinv"                                               //Last weapon used
+bind "B" "+buymenu"                                               //Buymenu
+bind "G" "drop; nade_mode_false"                                  //Drop
+bind "1" "slot1; nade_mode_false"                                 //Primary weapon
+bind "2" "slot2; nade_mode_false"                                 //Secondary weapon
+bind "3" "slot3; nade_mode_false; +lookatweapon; -lookatweapon"   //Knife
+bind "5" "slot5; nade_mode_false"                                 //Bomb
+bind "6" "slot6; nade_mode_true"                                  //HE grenade
+bind "7" "slot7; nade_mode_true"                                  //Flashbang
+bind "8" "slot8; nade_mode_true"                                  //Smoke
+bind "9" "slot9; nade_mode_true"                                  //Decoy
+bind "0" "slot10; nade_mode_true"                                 //Molotov
+bind "4" "slot11; nade_mode_false"                                //Zeus
+bind "T" "+spray_menu"                                            //Graffiti menu
+
+//Communication keys
+bind "MOUSE3" "player_ping"                                       //Player ping
+bind "MOUSE4" "+voicerecord"                                      //Use microphone
+bind "U" "messagemode2"                                           //Team message
+bind "Y" "messagemode"                                            //Chat message
+bind "P" "callvote starttimeout"                                  //Call timeout
+
+//UI keys
+bind "TAB" "+showscores"                                          //Scoreboard
+bind "ALT" "+cl_show_team_equipment"                              //Show team equipment
+bind "M" "teammenu"                                               //Choose team
+bind "`" "toggleconsole"                                          //Toggle console
+bind "ESCAPE" "cancelselect"                                      //Cancel select
+bind "HOME" "disconnect; exec autoexec"                           //Disconnect (this key resets all practice bind to your ones)
+
+
+
+~~~ALIASES~~~
+
+//Nade mode
+alias "keys_nade_mode_true" "bind SPACE +jump-throw; bind E +forward-jump-throw; bind R +throwaction; bind T +forward-throw"
+alias "keys_nade_mode_false" "bind SPACE +duck-jump; bind E +use; bind R +reload; bind T +spray_menu"
+
+alias "mouse1_nade_mode_true" "+attack; keys_nade_mode_true; getpos"
+alias "mouse2_nade_mode_true" "+attack2; keys_nade_mode_true; getpos"
+alias "+mouse1_nade_mode" "mouse1_nade_mode_true"
+alias "+mouse2_nade_mode" "mouse2_nade_mode_true"
+
+alias "mouse1_nade_mode_false" "throw1; keys_nade_mode_false"
+alias "mouse2_nade_mode_false" "throw2; keys_nade_mode_false"
+alias "-mouse1_nade_mode" "mouse1_nade_mode_false"
+alias "-mouse2_nade_mode" "mouse2_nade_mode_false"
+
+alias "nade_mode_true" "mouse12_nade_mode"
+alias "mouse12_nade_mode" "bind MOUSE1 +mouse1_nade_mode; bind MOUSE2 +mouse2_nade_mode"
+
+alias "nade_mode_false" "keys_nade_mode_false; mouse12_defaut"
+alias "mouse12_defaut" "bind MOUSE1 +attack; bind MOUSE2 +attack2"
+
+//Nade mode bug fixing (for some reason u can't use switchinng between players and can't use mouse2 while holding TAB)
+bind "KEY" "bind mouse1 +attack; bind mouse2 +attack2"
+
+//THROW action
+alias "+throwaction" "-attack;-attack2"
+alias "-throwaction" "nade_mode_false"
+
+//JUMP-THROW action
+alias "+jump-throw" "+jump;+throwaction"
+alias "-jump-throw" "-jump;-throwaction"
+
+//FORWARD-THROW action
+alias "+forward-throw" "+forward;+throwaction"
+alias "-forward-throw" "-forward;-throwaction"
+
+//FORWARD-JUMP-THROW action
+alias "+forward-jump" "+forward;+jump"
+alias "-forward-jump" "-forward;-jump"
+alias "+forward-jump-throw" "+forward-jump;+throwaction"
+alias "-forward-jump-throw" "-forward-jump;-throwaction"
+
+//DUCK-JUMP action
+alias "+duck-jump" "+jump;+duck"
+alias "-duck-jump" "-jump;-duck"
+bind "SPACE" "+duck-jump"
+
+//Fast drop bomb
+alias "+dropbomb" "slot5"
+alias "-dropbomb" "drop; nade_mode_false"
+bind "KEY" "+dropbomb"
+
+//Toggle radar zoom in-out
+bind "KEY" "toggle cl_radar_scale 0.4 0.9"
+
+//Buymenu method as HOLD
+alias "+buymenu" "buymenu"
+alias "-buymenu" "buymenu"
+
+//Fast switchin after AWP shot
+alias "+lastinv" "slot3"
+alias "-lastinv" "slot1"
+
+bind "F9" "exec YOUR BINDS"
+bind "F10" "exec PRACTICE BINDS"
+bind "F11" "exec PRACTICE SERVER CONFIGURATION"
