@@ -68,8 +68,8 @@ alias "mouse2_nade_mode_true" "+attack2; keys_nade_mode_true; getpos"
 alias "+mouse1_nade_mode" "mouse1_nade_mode_true"
 alias "+mouse2_nade_mode" "mouse2_nade_mode_true"
 
-alias "mouse1_nade_mode_false" "throw1; keys_nade_mode_false"
-alias "mouse2_nade_mode_false" "throw2; keys_nade_mode_false"
+alias "mouse1_nade_mode_false" "-attack; keys_nade_mode_false"
+alias "mouse2_nade_mode_false" "-attack2; keys_nade_mode_false"
 alias "-mouse1_nade_mode" "mouse1_nade_mode_false"
 alias "-mouse2_nade_mode" "mouse2_nade_mode_false"
 
