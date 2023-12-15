@@ -1,0 +1,34 @@
+alias "inferno_ct_pos1_tm" "say POSITION 1 - Instant tricky MID smoke (LEFT click & JUMP-THROW bind).; setpos_exact 2292.060059 2027.689941 135.956955; setang -44.386139 -136.397324 0.000000; previous_smoke inferno_ct_pos1_h; next_smoke inferno_ct_pos1_h; alias previous_spawn inferno_ct_pos6_tm; alias next_spawn inferno_ct_pos2_tm"
+alias "inferno_ct_pos1_h" "say POSITION 1 - Instant tricky HALFWALL smoke (LEFT click & RUN-JUMP-THROW bind).; setpos_exact 2292.060059 2027.689941 135.956955; setang -58.849857 -176.853851 0.000000; previous_smoke inferno_ct_pos1_tm; next_smoke inferno_ct_pos1_tm"
+
+alias "inferno_ct_pos2_tm" "say POSITION 2 - Instant tricky MID smoke (LEFT click & JUMP-THROW bind).; setpos_exact 2353.000000 1977.000000 135.518875; setang -43.384148 -138.726883 0.000000; previous_smoke inferno_ct_pos2_th; next_smoke inferno_ct_pos2_r; alias previous_spawn inferno_ct_pos1_tm; alias next_spawn inferno_ct_pos3_tm"
+alias "inferno_ct_pos2_r" "say POSITION 2 - Instant RAMP smoke (LEFT click, A TINY STEP RUNNING & JUMP-THROW bind).; setpos_exact 2353.000000 1977.000000 135.518875; setang -38.543945 -161.233734 0.000000; previous_smoke inferno_ct_pos2_tm; next_smoke inferno_ct_pos2_db"
+alias "inferno_ct_pos2_db" "say POSITION 2 - Instant DEEP BANANA smoke (LEFT click, A TINY STEP WALKING & JUMP-THROW bind).; setpos_exact 2353.000000 1977.000000 135.518875; setang -38.939758 -162.840424 0.000000; previous_smoke inferno_ct_pos2_r; next_smoke inferno_ct_pos2_th"
+alias "inferno_ct_pos2_th" "say POSITION 2 - Instant tricky HALFWALL smoke (LEFT click & JUMP-THROW bind).; setpos_exact 2353.000000 1977.000000 135.518875; setang -49.807774 -178.261490 0.000000; previous_smoke inferno_ct_pos2_db; next_smoke inferno_ct_pos2_tm"
+
+alias "inferno_ct_pos3_tm" "say POSITION 3 - Instant tricky MID smoke (LEFT click & JUMP-THROW bind).; setpos_exact 2397.000000 2079.000000 132.767532; setang -34.386101 -136.977798 0.000000; previous_smoke inferno_ct_pos3_th; next_smoke inferno_ct_pos3_r; alias previous_spawn inferno_ct_pos2_tm; alias next_spawn inferno_ct_pos4_tm"
+alias "inferno_ct_pos3_r" "say POSITION 3 - Instant RAMP smoke (LEFT click, A STEP WALKING & JUMP-THROW bind).; setpos_exact 2397.000000 2079.000000 132.767532; setang -39.248119 -155.282257 0.000000; previous_smoke inferno_ct_pos3_tm bind; next_smoke inferno_ct_pos3_db"
+alias "inferno_ct_pos3_db" "say POSITION 3 - Instant DEEP BANANA smoke (LEFT click, A STEP WALKING & JUMP-THROW bind).; setpos_exact 2397.000000 2079.000000 132.767532; setang -43.120075 -161.023956 0.000000; previous_smoke inferno_ct_pos3_r; next_smoke inferno_ct_pos3_th"
+alias "inferno_ct_pos3_th" "say POSITION 3 - Instant tricky HALFWALL smoke (LEFT click & JUMP-THROW bind).; setpos_exact 2397.000000 2079.000000 132.767532; setang -48.950123 -175.587921 0.000000; previous_smoke inferno_ct_pos3_db; next_smoke inferno_ct_pos3_tm"
+
+alias "inferno_ct_pos4_tm" "say POSITION 4 - Instant tricky MID smoke (LEFT click & JUMP-THROW bind).; setpos_exact 2472.349854 2005.969971 134.505051; setang -43.823856 -139.717407 0.000000; previous_smoke inferno_ct_pos4_th; next_smoke inferno_ct_pos4_r; alias previous_spawn inferno_ct_pos3_tm; alias next_spawn inferno_ct_pos5_tm"
+alias "inferno_ct_pos4_r" "say POSITION 4 - Instant RAMP smoke (LEFT click, WALKING & JUMP-THROW bind).; setpos_exact 2472.349854 2005.969971 134.505051; setang -25.651762 -156.899185 0.000000; previous_smoke inferno_ct_pos4_tm bind; next_smoke inferno_ct_pos4_db"
+alias "inferno_ct_pos4_db" "say POSITION 4 - Instant DEEP BANANA smoke - not found yet!; previous_smoke inferno_ct_pos4_r; next_smoke inferno_ct_pos4_th"
+alias "inferno_ct_pos4_th" "say POSITION 4 - Instant tricky HALFWALL smoke (LEFT click & JUMP-THROW bind).; setpos_exact 2472.349854 2005.969971 134.505051; setang -46.222012 -178.613800 0.000000; previous_smoke inferno_ct_pos4_db; next_smoke inferno_ct_pos4_tm"
+
+alias "inferno_ct_pos5_tm" "say POSITION 5 - Instant tricky MID smoke (LEFT click & RUN-JUMP-THROW bind).; setpos_exact 2493.000000 2090.000000 132.549530; setang -31.613646 -138.898026 0.000000; previous_smoke inferno_ct_pos5_th; next_smoke inferno_ct_pos5_r; alias previous_spawn inferno_ct_pos4_tm; alias next_spawn inferno_ct_pos6_tm"
+alias "inferno_ct_pos5_r" "say POSITION 5 - Instant RAMP smoke (LEFT click, WALKING & JUMP-THROW bind).; setpos_exact 2493.000000 2090.000000 132.549530; setang -33.131752 -156.388321 0.000000; previous_smoke inferno_ct_pos5_tm bind; next_smoke inferno_ct_pos5_db"
+alias "inferno_ct_pos5_db" "say POSITION 5 - Instant DEEP BANANA smoke - not found yet!; previous_smoke inferno_ct_pos5_r; next_smoke inferno_ct_pos5_th"
+alias "inferno_ct_pos5_th" "say POSITION 5 - Instant tricky HALFWALL smoke (LEFT click & JUMP-THROW bind).; setpos_exact 2493.000000 2090.000000 132.549530; setang -47.167908 -175.506546 0.000000; previous_smoke inferno_ct_pos5_db; next_smoke inferno_ct_pos5_tm"
+
+alias "inferno_ct_pos6_tm" "say POSITION 6 - Instant tricky MID smoke (LEFT click & RUN-JUMP-THROW bind).; setpos_exact 2456.830078 2153.159912 132.077209; setang -28.314026 -137.298050 0.000000; previous_smoke inferno_ct_pos6_th; next_smoke inferno_ct_pos6_r; alias previous_spawn inferno_ct_pos5_tm; alias next_spawn inferno_ct_pos1_tm"
+alias "inferno_ct_pos6_r" "say POSITION 6 - Instant RAMP smoke (LEFT click, WALKING & JUMP-THROW bind).; setpos_exact 2456.830078 2153.159912 132.077209; setang -38.192127 -154.545425 0.000000; previous_smoke inferno_ct_pos6_tm bind; next_smoke inferno_ct_pos6_db"
+alias "inferno_ct_pos6_db" "say POSITION 6 - Instant DEEP BANANA smoke - not found yet!; previous_smoke inferno_ct_pos6_r; next_smoke inferno_ct_pos6_th"
+alias "inferno_ct_pos6_th" "say POSITION 6 - Instant tricky HALFWALL smoke (LEFT click & JUMP-THROW bind).; setpos_exact 2456.830078 2153.159912 132.077209; setang -49.081940 -173.663696 0.000000; previous_smoke inferno_ct_pos6_db; next_smoke inferno_ct_pos6_tm"
+
+bind "KEY" "inferno_ct_pos1_tm"
+
+bind "DOWNARROW" "previous_spawn"
+bind "UPARROW" "next_spawn"
+bind "LEFTARROW" "previous_smoke"
+bind "RIGHTARROW" "next_smoke"
