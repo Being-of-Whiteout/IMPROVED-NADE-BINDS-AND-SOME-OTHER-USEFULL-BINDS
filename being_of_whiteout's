@@ -53,7 +53,7 @@ bind "ALT" "+cl_show_team_equipment"                              //Show team eq
 bind "M" "teammenu"                                               //Choose team
 bind "`" "toggleconsole"                                          //Toggle console
 bind "ESCAPE" "cancelselect"                                      //Cancel select
-bind "HOME" "disconnect; exec autoexec"                           //Disconnect (this key resets all practice bind to your ones)
+bind "HOME" "disconnect; exec autoexec"                           //Disconnect (this key resets all practice binds to your ones)
 
 
 
