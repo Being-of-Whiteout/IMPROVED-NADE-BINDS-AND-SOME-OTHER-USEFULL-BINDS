@@ -1,0 +1,63 @@
+//Map execing
+alias "map_selection" "nums_to_maplist; say Chooes a map!"
+bind "F4" "map_selection"
+
+alias "echoing" "echo Type 1 to choose Ancient; echo Type 2 to choose Anubis; echo Type 3 to choose Inferno; echo Type 4 to choose Nuke; echo Type 5 to choose Overpass"
+alias "nums_to_maplist" "bind 1 choose_ancient; bind 2 choose_anubis; bind 3 choose_inferno; bind 4 choose_nuke; bind 5 choose_overpass"
+alias "nums_to_default" "bind 1 pramary_weapon; bind 2 secondary_weapon; bind 3 knife; bind 4 zeus; bind 5 bomb"
+
+alias "choose_ancient" "exec map_ancient; nums_to_default; say Ancient has been executed"
+alias "choose_anubis" "exec map_anubis; nums_to_default; say Anubis has been executed"
+alias "choose_inferno" "exec map_inferno; nums_to_default; say Inferno has been executed"
+alias "choose_nuke" "exec map_nuke; nums_to_default; say Nuke has been executed"
+alias "choose_overpass" "exec map_overpass; nums_to_default; say Overpass has been executed"
+
+alias "pramary_weapon" "slot1; nade_mode_false"
+alias "secondary_weapon" "slot2; nade_mode_false"
+alias "knife" "slot3; nade_mode_false; +lookatweapon; -lookatweapon"
+alias "zeus" "slot11; nade_mode_false"
+alias "bomb" "slot5; nade_mode_false"
+alias "flashbang" "slot7; nade_mode_true"
+alias "smoke" "slot8; nade_mode_true"
+alias "molotov" "slot10; nade_mode_true"
+alias "he_grenade" "slot6; nade_mode_true"
+alias "decoy" "slot9; nade_mode_true"
+
+//Bots
+alias "add_bot" "ct-bot"
+alias "ct-bot" "bot_add ct; alias add_bot t-bot"
+alias "t-bot" "bot_add_t; alias add_bot ct-bot"
+bind "KEY" "add_bot"
+bind "KEY" "bot_kick"
+
+bind "KEY" "bot_place"
+
+alias "bot-crouching" "bc_true"
+alias "bc_true" "bot_crouch true; alias bot-crouching bc_false"
+alias "bc_false" "bot_crouch false; alias bot-crouching bc_true"
+bind "KEY" "bot-crouching"
+
+//Noclip
+bind "KEY" "noclip"
+
+//Rethrow last grenade
+bind "KEY" "sv_rethrow_last_grenade"
+
+//Erase smokeм
+bind "KEY" "ent_fire smokegrenade_projectile kill; stopsound"
+
+//Increase time speed  (1st method)
+alias "+timespeedup" "host_timescale 20"
+alias "-timespeedup" "host_timescale 1"
+bind "KEY" "+timespeedup"
+
+//Increase time speed  (2nd method - no lags)
+alias "+framerateup" "host_framerate 20"
+alias "-framerateup" "host_framerate 0"
+bind "KEY" "+framerateup"
+
+//Disable HUD (for video recording)
+alias "hud_toggle" "disable_hud"
+alias "enable_hud" "cl_draw_only_deathnotices 0; sv_grenade_trajectory_prac_pipreview true; alias hud_toggle disable_hud"
+alias "disable_hud" "cl_draw_only_deathnotices 1; sv_grenade_trajectory_prac_pipreview false; alias hud_toggle enable_hud"
+bind "KEY" "hud_toggle"
