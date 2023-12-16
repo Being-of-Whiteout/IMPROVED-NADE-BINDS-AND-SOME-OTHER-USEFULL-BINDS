@@ -4,7 +4,7 @@ bind "F4" "map_selection"
 
 alias "echoing" "echo Type 1 to choose Ancient; echo Type 2 to choose Anubis; echo Type 3 to choose Inferno; echo Type 4 to choose Nuke; echo Type 5 to choose Overpass"
 alias "nums_to_maplist" "bind 1 choose_ancient; bind 2 choose_anubis; bind 3 choose_inferno; bind 4 choose_nuke; bind 5 choose_overpass"
-alias "nums_to_default" "unbind 1; bind 2 pramary_weapon; bind 3 secondary_weapon; bind 4 knife; bind 5 zeus"
+alias "nums_to_default" "bind 1 pramary_weapon; bind 2 secondary_weapon; bind 3 knife; bind 4 zeus; bind 5 bomb"
 
 alias "choose_ancient" "exec map_ancient; nums_to_default; say Ancient has been executed"
 alias "choose_anubis" "exec map_anubis; nums_to_default; say Anubis has been executed"
