@@ -12,7 +12,7 @@ alias "ancient_t_pos3_ch" "say POSITION 3 - Instant CHEETAH smoke (LEFT click & 
 alias "ancient_t_pos3_le" "say POSITION 3 - Instant LANE smoke (LEFT click & JUMP-THROW bind).; setpos_exact -584.000000 -2288.000000 -162.422363; setang -56.056324 65.184608 0.000000; alias previous_smoke ancient_t_pos3_ch; alias next_smoke ancient_t_pos3_fl"
 alias "ancient_t_pos3_fl" "say POSITION 3 - Fast LONG smoke.; setpos_exact -584.000000 -2288.000000 -162.422363; setang -38.786129 48.266075 0.000000; alias previous_smoke ancient_t_pos3_le; alias next_smoke ancient_t_pos3_d"
 
-alias "ancient_t_pos4_le" "say POSITION 4 - Instant LANE smoke (LEFT click, CROUCH & FORWARD-JUMP-THROW bind).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -34.759880 72.641731 0.000000; alias previous_smoke ancient_t_pos4_lg; alias next_smoke ancient_t_pos4_lg"
+alias "ancient_t_pos4_le" "say POSITION 4 - Instant LANE smoke (LEFT click & FORWARD-JUMP-THROW bind).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -34.759880 72.641731 0.000000; alias previous_smoke ancient_t_pos4_lg; alias next_smoke ancient_t_pos4_lg"
 alias "ancient_t_pos4_lg" "say POSITION 4 - Instant  LONG smoke (LEFT click, WALKING & JUMP-THROW bind).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -41.426048 58.429577 0.000000; alias previous_smoke ancient_t_pos4_le; alias next_smoke ancient_t_pos4_le; alias previous_spawn ancient_t_pos3_w; alias next_spawn ancient_t_pos5_w"
 
 alias "ancient_t_pos5_d" "say POSITION 5 - Instant DONUT smoke (LEFT click & FORWARD-JUMP-THROW bind).; setpos_exact -328.000000 -2288.000000 -153.255737; setang -38.711277 102.044991 0.000000; alias previous_smoke ancient_t_pos5_lg; alias next_smoke ancient_t_pos5_w"
