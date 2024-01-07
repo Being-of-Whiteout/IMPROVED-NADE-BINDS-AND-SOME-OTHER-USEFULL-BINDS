@@ -81,6 +81,7 @@ alias "mouse12_defaut" "bind MOUSE1 +attack; bind MOUSE2 +attack2"
 
 //Nade mode bug fixing (for some reason u can't use switchinng between players and can't use mouse2 while holding TAB)
 bind "KEY" "bind mouse1 +attack; bind mouse2 +attack2"
+bind "UPARROW" "-duck"
 
 //THROW action
 alias "+throwaction" "-attack;-attack2"
