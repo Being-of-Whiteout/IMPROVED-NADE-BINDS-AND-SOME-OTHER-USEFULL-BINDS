@@ -232,8 +232,8 @@ bind "T" "+spray_menu"                                                   //Graff
 // Communication keys
 bind "MOUSE3" "player_ping"                                              //Player ping
 bind "K" "+voicerecord"                                                  //Use microphone
-bind "U" "messagemode2"                                                  //Team message
-bind "Y" "messagemode"                                                   //Chat message
+bind "ENTER" "messagemode2"                                              //Team message
+//                                                                       //Chat message (Right CTRL + ENTER)
 bind "P" "callvote starttimeout"                                         //Call timeout
 
 
@@ -334,6 +334,12 @@ alias "-buymenu" "buymenu"
 // Fast weapon switch after AWP shot
 alias "+lastinv" "slot3"
 alias "-lastinv" "slot1"
+
+
+// Message to everyone
+alias "+chat" "bind ENTER messagemode"
+alias "-chat" "bind ENTER messagemode2"
+bind "RCTRL" "+chat"
 
 
 
