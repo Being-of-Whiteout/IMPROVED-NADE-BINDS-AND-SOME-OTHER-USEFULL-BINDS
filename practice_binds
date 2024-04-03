@@ -5,9 +5,9 @@
 alias "map_selection" "nums_to_maplist; say Choose any map (open console).; echoing"
 bind "F4" "map_selection"
 
-alias "echoing" "echo; echo	======================== CHOOSE THE MAP ========================; echo Type 1 to choose Ancient; echo Type 2 to choose Anubis; echo Type 3 to choose Inferno; echo Type 4 to choose Nuke; echo Type 5 to choose Overpass; echo Type 6 to choose Vertigo; echo" 
-alias "nums_to_maplist" "bind 1 choose_ancient; bind 2 choose_anubis; bind 3 choose_inferno; bind 4 choose_nuke; bind 5 choose_overpass; bind 6 choose_vertigo"
-alias "nums_to_default" "bind 1 pramary_weapon; bind 2 secondary_weapon; bind 3 knife; bind 4 zeus; bind 5 bomb; bind 6 he_grenade"
+alias "echoing" "echo; echo	======================== CHOOSE THE MAP ========================; echo Press 1 to choose Ancient; echo Press 2 to choose Anubis; echo Press 3 to choose Inferno; echo Press 4 to choose Nuke; echo Press 5 to choose Overpass; echo Press 6 to choose Vertigo; echo"
+alias "nums_to_maplist" "bind SCANCODE30 choose_ancient; bind SCANCODE31 choose_anubis; bind SCANCODE32 choose_inferno; bind SCANCODE33 choose_nuke; bind SCANCODE34 choose_overpass; bind SCANCODE35 choose_vertigo"
+alias "nums_to_default" "bind SCANCODE30 pramary_weapon; bind SCANCODE31 secondary_weapon; bind SCANCODE32 knife; bind SCANCODE33 zeus; bind SCANCODE34 bomb; bind SCANCODE35 he_grenade"
 
 alias "choose_ancient" "exec map_ancient; nums_to_default; say Ancient has been executed (use CLASSIC viewmodel position)."
 alias "choose_anubis" "exec map_anubis; nums_to_default; say Anubis has been executed (use CLASSIC viewmodel position)."
