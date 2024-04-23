@@ -7,7 +7,7 @@ bind "F4" "map_selection"
 
 alias "echoing" "echo; echo	======================== CHOOSE THE MAP ========================; echo Press 1 to choose Ancient; echo Press 2 to choose Anubis; echo Press 3 to choose Inferno; echo Press 4 to choose Nuke; echo Press 5 to choose Overpass; echo Press 6 to choose Vertigo; echo"
 alias "nums_to_maplist" "bind SCANCODE30 choose_ancient; bind SCANCODE31 choose_anubis; bind SCANCODE32 choose_inferno; bind SCANCODE33 choose_nuke; bind SCANCODE34 choose_overpass; bind SCANCODE35 choose_vertigo"
-alias "nums_to_default" "bind SCANCODE30 pramary_weapon; bind SCANCODE31 secondary_weapon; bind SCANCODE32 knife; bind SCANCODE33 zeus; bind SCANCODE34 bomb; bind SCANCODE35 he_grenade"
+alias "nums_to_default" "bind SCANCODE30 praimary_weapon; bind SCANCODE31 secondary_weapon; bind SCANCODE32 knife; bind SCANCODE33 zeus; bind SCANCODE34 bomb; bind SCANCODE35 he_grenade"
 
 alias "choose_ancient" "exec map_ancient; nums_to_default; say Ancient has been executed (use CLASSIC viewmodel position)."
 alias "choose_anubis" "exec map_anubis; nums_to_default; say Anubis has been executed (use CLASSIC viewmodel position)."
@@ -16,7 +16,7 @@ alias "choose_nuke" "exec map_nuke; nums_to_default; say Nuke has been executed 
 alias "choose_overpass" "exec map_overpass; nums_to_default; say Overpass has been executed (use CLASSIC viewmodel position)."
 alias "choose_vertigo" "exec map_vertigo; nums_to_default; say Vertigo has been executed (use CLASSIC viewmodel position)"
 
-alias "pramary_weapon" "slot1; nade_mode_false"
+alias "praimary_weapon" "slot1; nade_mode_false"
 alias "secondary_weapon" "slot2; nade_mode_false"
 alias "knife" "slot3; nade_mode_false; +lookatweapon; -lookatweapon"
 alias "bomb" "slot5; nade_mode_false"
