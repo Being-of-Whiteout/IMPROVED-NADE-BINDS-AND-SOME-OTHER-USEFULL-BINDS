@@ -1,0 +1,55 @@
+
+// ================ BEING OF WHITEOUT'S DEMO UI CONFIGURATION  ==================
+
+// Show or hide DemoUI
+bind "Z" "demoui"
+
+
+// Toggle pause
+bind "SPACE" "demo_togglepause"
+
+
+// Toggle X-Ray
+Bind "X" "toggle spec_show_xray"
+
+
+// Toggle Bloom Effect
+bind "B" "toggle r_csgo_effects_bloom false true"
+
+
+// Toggle HUD
+bind "H" "toggle cl_draw_only_deathnotices 0 1"
+
+
+// Skip 10 seconds backward/forward respectively (you can swap positive and negative value to make skipping work properly)
+bind "Q" "demo_gototick -640 relative"
+bind "E" "demo_gototick 640 relative"
+
+
+// Increase timescale while holding a key
+alias "+fastforward15" "demo_timescale 15; cl_clock_correction 0"
+alias "-fastforward15" "demo_timescale 1; cl_clock_correction 0"
+bind "SHIFT" "+fastforward15"
+
+
+// Change demo timescale
+alias "speed_x01" "demo_timescale 0.1; alias demo-speed_dec error; alias demo-speed_inc speed_x05"
+alias "speed_x05" "demo_timescale 0.5; alias demo-speed_dec speed_x01; alias demo-speed_inc speed_x10"
+alias "speed_x10" "demo_timescale 1.0; alias demo-speed_dec speed_x05; alias demo-speed_inc speed_x15"
+alias "speed_x15" "demo_timescale 1.5; alias demo-speed_dec speed_x10; alias demo-speed_inc speed_x20"
+alias "speed_x20" "demo_timescale 2.0; alias demo-speed_dec speed_x15; alias demo-speed_inc speed_x40"
+alias "speed_x40" "demo_timescale 4.0; alias demo-speed_dec speed_x20; alias demo-speed_inc speed_x80"
+alias "speed_x80" "demo_timescale 8.0; alias demo-speed_dec speed_x40; alias demo-speed_inc error"
+
+alias "demo-speed_dec" "speed_x05"
+alias "demo-speed_inc" "speed_x15"
+
+bind "F" "demo-speed_dec"
+bind "G" "demo-speed_inc"
+bind "R" "speed_x10"
+
+
+// Deleting mouse to look around
+alias "+scope" "+forward; sv_noclipspeed 0.000000"
+alias "-scope" "-forward; sv_noclipspeed 1200.000000"
+bind "MOUSE4" "+scope"
