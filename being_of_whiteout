@@ -377,6 +377,11 @@ bind "RSHIFT" "+chat"
 
 // ============================ OTHER .SFGs =============================
 
+bind "F8" "exec demoui"                                                  //Execution DemoUI binds
 bind "F9" "exec being_of_whiteout"                                       //Executing competitive binds
 bind "F10" "exec practice_binds"                                         //Executing practice binds
 bind "F11" "exec practice_server_configuration"                          //Executing practice server configuration
+
+
+
+say "Main configuration has been executed."
