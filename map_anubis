@@ -1,0 +1,71 @@
+
+// ========================================================================================================= THIS IS DISCORD EXCLUSIVE .CFG OF BEING OF WHITEOUT =========================================================================================================
+
+alias "anubis_t_pos1_bcon" "say POSITION 1 - Instant B-CON smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -154.000000 -1503.079956 -11.968750; setang -11.065678 98.741463 0.000000; alias previous_smoke anubis_t_pos1_window; alias next_smoke anubis_t_pos1_window; alias previous_spawn anubis_t_pos11_bcon; alias next_spawn anubis_t_pos2_bcon"
+alias "anubis_t_pos1_window" "say POSITION 1 - Instant WINDOW smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -154.000000 -1503.079956 -11.968750; setang -7.391626 89.149864 0.000000; alias previous_smoke anubis_t_pos1_bcon; alias next_smoke anubis_t_pos1_bcon"
+
+alias "anubis_t_pos2_bcon" "say POSITION 2 - Instant B-CON smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -144.000000 -1568.000000 -11.968750; setang -8.646080 98.742203 0.000000; alias previous_smoke anubis_t_pos2_window; alias next_smoke anubis_t_pos2_window; alias previous_spawn anubis_t_pos1_bcon; alias next_spawn anubis_t_pos3_bcon"
+alias "anubis_t_pos2_window" "say POSITION 2 - Instant WINDOW smoke (CROUCH, aim with CROSSHAIR as shown, STAND UP then BACKWARD-JUMP-THROW bind).; setpos_exact -144.000000 -1568.000000 -11.968750; setang -13.287980 86.620094 0.000000; alias previous_smoke anubis_t_pos2_bcon; alias next_smoke anubis_t_pos2_bcon"
+
+alias "anubis_t_pos3_bcon" "say POSITION 3 - Instant B-CON smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -128.004028 -1632.000000 -0.960938; setang -15.092204 98.939957 0.000000; alias previous_smoke anubis_t_pos3_window; alias next_smoke anubis_t_pos3_bcon_water_easy; alias next_smoke anubis_t_pos3_window; alias previous_spawn anubis_t_pos2_bcon; alias next_spawn anubis_t_pos4_bcon"
+alias "anubis_t_pos3_window" "say POSITION 3 - Instant WINDOW smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -128.004028 -1632.000000 -0.960938; setang -11.968220 89.897903 0.000000; alias previous_smoke anubis_t_pos3_bcon; alias next_smoke anubis_t_pos3_bcon"
+
+alias "anubis_t_pos4_ninja" "say POSITION 4 - Instant B rush NINJA smoke (aim with THE SCOPE as shown then FORWARD-JUMP-THROW bind).; setpos_exact -192.000000 -1608.000000 0.968750; setang -27.031040 117.583694 0.000000; alias previous_smoke anubis_t_pos4_window; alias next_smoke anubis_t_pos4_bcon"
+alias "anubis_t_pos4_bcon" "say POSITION 4 - Instant B-CON smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -192.000000 -1608.000000 0.968750; setang -11.081141 97.365173 0.000000; alias previous_smoke anubis_t_pos4_ninja; alias next_smoke anubis_t_pos4_window; alias previous_spawn anubis_t_pos3_bcon; alias next_spawn anubis_t_pos5_bcon"
+alias "anubis_t_pos4_window" "say POSITION 4 - Instant WINDOW smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -192.000000 -1608.000000 0.968750; setang -15.789141 85.925278 0.000000; alias previous_smoke anubis_t_pos4_bcon; alias next_smoke anubis_t_pos4_ninja"
+
+alias "anubis_t_pos5_bcon" "say POSITION 5 - Instant B-CON smoke (aim with CROSSHAIR as shown the BACKWARD-JUMP-THROW bind).; setpos_exact -234.000000 -1503.079956 -11.968750; setang -10.487290 94.240402 0.000000; alias previous_smoke anubis_t_pos5_window; alias next_smoke anubis_t_pos5_window; alias previous_spawn anubis_t_pos4_bcon; alias next_spawn anubis_t_pos6_bcon"
+alias "anubis_t_pos5_window" "say POSITION 5 - Instant WINDOW smoke (CROUCH, aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -234.000000 -1503.079956 -11.968750; setang -38.581238 87.442490 0.000000; alias previous_smoke anubis_t_pos5_bcon; alias next_smoke anubis_t_pos5_bcon"
+
+alias "anubis_t_pos6_bcon" "say POSITION 6 - Instant B-CON smoke (aim with CROSSHAIR then BACKWARD-JUMP-THROW bind).; setpos_exact -264.000000 -1560.000000 -11.968750; setang -8.558027 95.355782 0.000000; alias previous_smoke anubis_t_pos6_window; alias next_smoke anubis_t_pos6_window; alias previous_spawn anubis_t_pos5_bcon; alias next_spawn anubis_t_pos7_bcon"
+alias "anubis_t_pos6_window" "say POSITION 6 - Instant WINDOW smoke (aim with CROSSHAIR as shown then hard BACKWARD-JUMP-THROW bind).; setpos_exact -264.000000 -1560.000000 -11.968750; setang -12.870081 83.981606 0.000000; alias previous_smoke anubis_t_pos6_bcon; alias next_smoke anubis_t_pos6_bcon"
+
+alias "anubis_t_pos7_bcon" "say POSITION 7 - Instant B-CON smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -304.000000 -1608.000000 0.968750; setang -9.811880 93.904366 0.000000; alias previous_smoke anubis_t_pos7_window; alias next_smoke anubis_t_pos7_window; alias previous_spawn anubis_t_pos6_bcon; alias next_spawn anubis_t_pos8_bcon"
+alias "anubis_t_pos7_window" "say POSITION 7 - Instant WINDOW smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -304.000000 -1608.000000 0.968750; setang -11.307868 85.368156 0.000000; alias previous_smoke anubis_t_pos7_bcon; alias next_smoke anubis_t_pos7_bcon"
+
+alias "anubis_t_pos8_bcon" "say POSITION 8 - Instant B-CON smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -328.000000 -1528.000000 -11.968750; setang -10.010110 93.486732 0.000000; alias previous_smoke anubis_t_pos8_window; alias next_smoke anubis_t_pos8_window; alias previous_spawn anubis_t_pos7_bcon; alias next_spawn anubis_t_pos9_bcon"
+alias "anubis_t_pos8_window" "say POSITION 8 - Instant WINDOW smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -328.000000 -1528.000000 -11.968750; setang -9.614342 84.400040 0.000000; alias previous_smoke anubis_t_pos8_bcon; alias next_smoke anubis_t_pos8_bcon"
+
+alias "anubis_t_pos9_bcon" "say POSITION 9 - Instant B-CON smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -384.000000 -1552.000000 -11.968750; setang -47.937771 91.176369 0.000000; alias previous_smoke anubis_t_pos9_window; alias next_smoke anubis_t_pos9_window; alias previous_spawn anubis_t_pos8_bcon; alias next_spawn anubis_t_pos10_bcon"
+alias "anubis_t_pos9_window" "say POSITION 9 - Instant WINDOW smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -384.000000 -1552.000000 -11.968750; setang -10.779962 83.454208 0.000000; alias previous_smoke anubis_t_pos9_bcon; alias next_smoke anubis_t_pos9_bcon"
+
+alias "anubis_t_pos10_bcon" "say POSITION 10 - Instant B-CON smoke (aim with CROSSHAIR as shown, BACKWARD-JUMP-THROW bind).; setpos_exact -416.000000 -1608.000000 10.031249; setang -15.400205 90.846390 0.000000; alias previous_smoke anubis_t_pos10_window; alias next_smoke anubis_t_pos10_window; alias previous_spawn anubis_t_pos9_bcon; alias next_spawn anubis_t_pos11_bcon"
+alias "anubis_t_pos10_window" "say POSITION 10 - Instant WINDOW smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -416.000000 -1608.000000 10.031249; setang -38.720097 82.882332 0.000000; alias previous_smoke anubis_t_pos10_bcon; alias next_smoke anubis_t_pos10_bcon"
+
+alias "anubis_t_pos11_bcon" "say POSITION 11 - Instant B-CON smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -416.000000 -1696.000000 2.031250; setang -11.462064 90.648643 0.000000; alias previous_smoke anubis_t_pos11_window; alias next_smoke anubis_t_pos11_window; alias previous_spawn anubis_t_pos10_bcon; alias next_spawn anubis_t_pos1_bcon"
+alias "anubis_t_pos11_window" "say POSITION 11 - Instant WINDOW smoke (aim with CROSSHAIR  as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -416.000000 -1696.000000 2.031250; setang -32.823994 82.882088 0.000000; alias previous_smoke anubis_t_pos11_bcon; alias next_smoke anubis_t_pos11_bcon"
+
+bind "SCANCODE54" "anubis_t_pos1_bcon"              // <
+
+
+
+alias "anubis_ct_pos1" "say POSITION 1; setpos_exact -360.000000 2120.000000 26.056593; setang_exact 0.000000 -135.000000 0.000000; alias previous_smoke unknown_bconommand; alias next_smoke unknown_bconommand; alias previous_spawn anubis_ct_pos5_tstairs; alias next_spawn anubis_ct_pos2_tstairs"
+
+alias "anubis_ct_pos2_amain" "say POSITION 2 - Instant A-MAIN smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -400.000000 2192.000000 35.031252; setang -45.385761 -38.533630 0.000000; alias previous_smoke anubis_ct_pos2_tstairs; alias next_smoke anubis_ct_pos2_upperrug"
+alias "anubis_ct_pos2_upperrug" "say POSITION 2 - Instant UPPER RUG (aim with CROSSHAIR as shown then FORWARD-JUMP-THROW bind).; setpos_exact -400.000000 2192.000000 35.031252; setang -39.864124 -46.299690 0.000000; alias previous_smoke anubis_ct_pos2_amain; alias next_smoke anubis_ct_pos2_tstairs
+alias "anubis_ct_pos2_tstairs" "say POSITION 2 - Instant T-STAIRS smoke(aim with CROSSHAIR as shown then FORWARD-JUMP-THROW bind).; setpos_exact -400.000000 2192.000000 35.031252; setang -46.309910 -61.919693 0.000000; alias previous_smoke anubis_ct_pos2_upperrug; alias next_smoke anubis_ct_pos2_amain; alias previous_spawn anubis_ct_pos1; alias next_spawn anubis_ct_pos3_tstairs"
+
+alias "anubis_ct_pos3_amain" "say POSITION 3 - Instant A-MAIN smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -476.000000 2216.000000 35.031252; setang -40.337955 -37.464279 0.000000; alias previous_smoke anubis_ct_pos3_tstairs; alias next_smoke anubis_ct_pos3_upperrug"
+alias "anubis_ct_pos3_upperrug" "say POSITION 3 - Instant UPPER RUG (aim with CROSSHAIR as shown then FORWARD-JUMP-THROW bind).; setpos_exact -476.000000 2216.000000 35.031252; setang -31.516140 -45.670334 0.000000; alias previous_smoke anubis_ct_pos3_amain; alias next_smoke anubis_ct_pos3_tstairs"
+alias "anubis_ct_pos3_tstairs" "say POSITION 3 - Instant T-STAIRS smoke (aim with CROSSHAIR as shown then JUMP-THROW bind).; setpos_exact -476.000000 2216.000000 35.031252; setang -28.765602 -60.718521 0.000000; alias previous_smoke anubis_ct_pos3_upperrug; alias next_smoke anubis_ct_pos3_amain; alias previous_spawn anubis_ct_pos2_tstairs; alias next_spawn anubis_ct_pos4_tstairs"
+
+alias "anubis_ct_pos4_amain" "say POSITION 4 - Instant A-MAIN smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -560.000000 2192.000000 28.031250; setang -21.732904 -36.331112 0.000000; alias previous_smoke anubis_ct_pos4_tstairs; alias next_smoke anubis_ct_pos4_upperrug"
+alias "anubis_ct_pos4_upperrug" "say POSITION 4 - Instant UPPER RUG (aim with CROSSHAIR as shown then FORWARD-JUMP-THROW bind).; setpos_exact -560.000000 2192.000000 28.031250; setang -29.411108 -43.173294 0.000000; alias previous_smoke anubis_ct_pos4_amain; alias next_smoke anubis_ct_pos4_tstairs"
+alias "anubis_ct_pos4_tstairs" "say POSITION 4 - Instant T-STAIRS smoke (aim with CROSSHAIR as shown then JUMP-THROW bind).; setpos_exact -560.000000 2192.000000 28.031250; setang -29.235018 -58.683224 0.000000; alias previous_smoke anubis_ct_pos4_upperrug; alias next_smoke anubis_ct_pos4_amain; alias previous_spawn anubis_ct_pos3_tstairs; alias next_spawn anubis_ct_pos5_tstairs"
+
+alias "anubis_ct_pos5_amain" "say POSITION 5 - Instant A-MAIN smoke (aim with CROSSHAIR as shown then BACKWARD-JUMP-THROW bind).; setpos_exact -608.000000 2120.000000 16.056599; setang -18.325449 -34.459850 0.000000; alias previous_smoke anubis_ct_pos5_tstairs; alias next_smoke anubis_ct_pos5_upperrug"
+alias "anubis_ct_pos5_upperrug" "say POSITION 5 - Instant UPPER RUG (aim with CROSSHAIR as shown then FROWARD-JUMP-THROW bind).; setpos_exact -608.000000 2120.000000 16.056599;  setang -37.252457 -41.135731 0.000000; alias previous_smoke anubis_ct_pos5_amain; alias next_smoke anubis_ct_pos5_tstairs"
+alias "anubis_ct_pos5_tstairs" "say POSITION 5 - Instant T-STAIRS smoke (aim with CROSSHAIR as shown then JUMP-THROW bind).; setpos_exact -608.000000 2120.000000 16.056599; setang -27.191402 -56.635921 0.000000; alias previous_smoke anubis_ct_pos5_upperrug; alias next_smoke anubis_ct_pos5_amain; alias previous_spawn anubis_ct_pos4_tstairs; alias next_spawn anubis_ct_pos1"
+
+bind "SCANCODE55" "anubis_ct_pos5_tstairs"          // >
+
+
+
+bind "SCANCODE81" "previous_spawn"                  // Down arrow
+bind "SCANCODE82" "next_spawn"                      // Up arrow
+bind "SCANCODE80" "previous_smoke"                  // Left arrow
+bind "SCANCODE79" "next_smoke"                      // Right arrow
+
+
+
+say "Anubis has been executed (use CLASSIC viewmodel position)."
