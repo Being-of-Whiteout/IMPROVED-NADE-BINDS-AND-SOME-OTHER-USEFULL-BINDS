@@ -4,27 +4,37 @@
 
 // Map executing for instant smokes practice
 alias "map_selection" "nums_to_maplist; say Choose any map (open console).; echoing"
-bind "F4" "map_selection"
+bind "KEY" "map_selection"
 
-alias "echoing" "echo; echo	======================== CHOOSE THE MAP ========================; echo Press 1 to choose Ancient; echo Press 2 to choose Anubis; echo Press 3 to choose Inferno; echo Press 4 to choose Nuke; echo Press 5 to choose Vertigo; echo"
-alias "nums_to_maplist" "bind SCANCODE30 choose_ancient; bind SCANCODE31 choose_anubis; bind SCANCODE32 choose_inferno; bind SCANCODE33 choose_nuke; bind SCANCODE34 choose_vertigo"
-alias "nums_to_default" "bind SCANCODE30 primary_weapon; bind SCANCODE31 secondary_weapon; bind SCANCODE32 knife; bind SCANCODE33 zeus; bind SCANCODE34 bomb"
+alias "echoing" "echo; echo	======================== CHOOSE THE MAP ========================; echo Press 1 to choose Ancient; echo Press 2 to choose Anubis; echo Press 3 to choose Dust II; echo Press 4 to choose Inferno; echo Press 5 to choose Mirage; echo Press 6 to choose Nuke; Press 7 to choose Vertigo echo" 
+alias "nums_to_maplist" "bind 1 choose_ancient; bind 2 choose_anubis; bind 3 choose_dust2; bind 4 choose_inferno; bind 5 choose_mirage; bind 6 choose_nuke; bind 7 choose_vertigo"
+alias "nums_to_default" "primary_weapon; secondary_weapon; knife; zeus; bomb; unbind 6; unbind 7"
 
-alias "choose_ancient" "exec map_ancient; nums_to_default; say Ancient has been executed (use CLASSIC viewmodel position)."
-alias "choose_anubis" "exec map_anubis; nums_to_default; say Anubis has been executed (use CLASSIC viewmodel position)."
-alias "choose_inferno" "exec map_inferno; nums_to_default; say Inferno has been executed (use CLASSIC viewmodel position)"
-alias "choose_nuke" "exec map_nuke; nums_to_default; say Nuke has been executed (use CLASSIC viewmodel position)."
-alias "choose_vertigo" "exec map_vertigo; nums_to_default; say Vertigo has been executed (use CLASSIC viewmodel position)"
+alias "choose_ancient" "exec map_ancient"
+alias "choose_anubis" "exec map_anubis"
+alias "choose_dust2" "exec map_dust2"
+alias "choose_inferno" "exec map_inferno"
+alias "choose_mirage" "exec map_mirage"
+alias "choose_nuke" "exec map_nuke"
+alias "choose_vertigo" "exec map_vertigo"
+
+alias "primary_weapon" "echo "multibinds\weapon_slots\primary_weapon" | exec"
+alias "secondary_weapon" "echo "multibinds\weapon_slots\secondary_weapon" | exec"
+alias "knife" "echo "multibinds\weapon_slots\knife" | exec"
+alias "zeus" "echo "multibinds\weapon_slots\zeus" | exec"
+alias "bomb" "echo "multibinds\weapon_slots\bomb" | exec"
+alias "he_grenade" "echo "multibinds\weapon_slots\he_grenade " | exec"
+alias "flashbang" "echo "multibinds\weapon_slots\flashbang" | exec"
+alias "smoke" "echo "multibinds\weapon_slots\smoke" | exec"
+alias "decoy" "echo "multibinds\weapon_slots\decoy" | exec"
+alias "molotov" "echo "multibinds\weapon_slots\molotov" | exec"
 
 
 // Bots
-alias "add_bot" "ct-bot"
-alias "ct-bot" "bot_add ct; alias add_bot t-bot"
-alias "t-bot" "bot_add_t; alias add_bot ct-bot"
-bind "KEY" "add_bot"                                                     //Add bot
-
+bind "-" "bot_add ct"                                                    //Add CT bot
+bind "=" "bot_add_t"                                                     //Add T bot
+bind "BACKSPACE" "bot_kick"                                              //Kick bots
 bind "KEY" "bot_place"                                                   //Place bot
-bind "KEY" "bot_kick"                                                    //kick bot
 
 bind "KEY" "toggle bot_crouch true false"                                //Bot crouching         
 bind "KEY" "toggle bot_stop 1 0"                                         //Bot stop
