@@ -14,6 +14,11 @@ battery_saver "false"                                                    //Lapto
 r_player_visibility_mode "1"                                             //Boost player contrast..................................................
 
 
+// Frame pacing
+fps_max "800.000000"                                                     //Maximum FPS in games...................................................
+fps_max_ui "200.000000"                                                  //Maximum FPS in menus...................................................
+
+
 // HUD Edge position
 safezonex "1.000000"                                                     //Horizontal Adjustment..................................................
 safezoney "1.000000"                                                     //Horizontal Adjustment..................................................
@@ -29,11 +34,14 @@ volume "0.900000"                                                        //Maste
 snd_headphone_eq "1"                                                     //EQ profile.............................................................[0 - Natural; 1 - Crisp; 2 - Smooth]
 snd_spatialize_lerp "0.500000"                                           //L&R isolation..........................................................
 snd_steamaudio_enable_perspective_correction "false"                     //Perspective Correction.................................................
-voice_modenable "true"                                                   //Voice / Microphone mode................................................[True - Push to talk; False - Disabled]
+snd_mute_losefocus "false"                                               //Player audio when game in background...................................
+
+
+// Voice
 snd_voipvolume "1.000000"                                                //Other player voice volume (VOIP volume)................................
+voice_modenable "true"                                                   //Voice / Microphone mode................................................[True - Push to talk; False - Disabled]
 voice_always_sample_mic "true"                                           //Streamlined push to talk...............................................
 voice_threshold "-120.000000"                                            //Microphone trigger threshold...........................................
-snd_mute_losefocus "false"                                               //Player audio when game in background...................................
 
 
 // Music
@@ -46,6 +54,13 @@ snd_mapobjective_volume "0.000000"                                       //Bomb 
 snd_tensecondwarning_volume "0.000000"                                   //Ten seconds warning volume.............................................
 snd_deathcamera_volume "0.000000"                                        //Deathcamera volume.....................................................
 snd_mute_mvp_music_live_players "true"                                   //Mute MVP music when players on both teams are alive....................
+
+
+// Game mode EQ
+//                                                                       //Competitiive EQ........................................................[Unknown console command]
+//                                                                       //Causal EQ..............................................................[Unknown console command]
+//                                                                       //Deathmatch EQ..........................................................[Unknown console command]
+//                                                                       //Arms race..............................................................[Unknown console command]
 
 
 
@@ -69,7 +84,7 @@ install_dlc_workshoptools_cvar "0"                                       //Insta
 
 
 // HUD
-hud_scaling "0.900000"                                                   //HUD scale...............................................................[from 0.900000 to 1.100000]
+hud_scaling "0.900000"                                                   //HUD scale..............................................................[from 0.900000 to 1.100000]
 cl_hud_color "0"                                                         //HUD color..............................................................[0 - Team color]
 //                                                                                                                                                [1 - White]
 //                                                                                                                                                [2 - Bright white]
@@ -90,11 +105,11 @@ ui_steam_overlay_notification_position_vert "0"                          //Commu
 
 
 // Team
-cl_teamid_overhead_mode "2"                                              //Show team positions in HUD..............................................[0 - Off; 1 - Show location; 2 - Show location and equipment]
+cl_teamid_overhead_mode "3"                                              //Show team ID through walls..............................................[0 - Off; 1 - Pips; 2 - Pips, names and health, 3 - Pips, names, health and equipment]
 cl_teammate_colors_show "2"                                              //Show player colors in Competitive.......................................[0 - No; 1 - Show colors; 2 - Show colors and letters]
-cl_teamid_overhead_colors_show "true"                                    //Show player colors on Team ID...........................................
+cl_teamid_overhead_colors_show "true"                                    //Use player colors on Team ID............................................
 lobby_default_privacy_bits2 "1"                                          //Friends lobby default permissions.......................................[0 - Friends need invites; 1 - All friends can join]
-cl_show_equipped_character_for_player_avatars "1"                        //Show teammate's equipped avatars........................................
+cl_show_equipped_character_for_player_avatars "0"                        //Show teammate's equipped avatars........................................
 ui_setting_advertiseforhire_auto "0"                                     //Looking to play when CS:GO starts.......................................
 
 
@@ -103,8 +118,8 @@ cl_player_ping_mute "0"                                                  //Playe
 cl_mute_enemy_team "0"                                                   //Mute enemy team.........................................................
 cl_mute_all_but_friends_and_party "0"                                    //Mute all but friends....................................................[0 - No; 1 - Only in non-competitive mods; 2 - Always]
 cl_allow_animated_avatars "false"                                        //Allow animated avatars..................................................
-cl_hide_avatar_images "0"                                                //Hide avatar images......................................................[0 - Show all; 1 - Hide all; 2 - Show only friends]
-cl_sanitize_player_names "false"                                         //Clean Player Name.......................................................
+cl_hide_avatar_images "0"                                                //Hide avatar images and castomized items.................................[0 - Show all; 1 - Hide all; 2 - Show only friends]
+cl_sanitize_player_names "false"                                         //Clean player name.......................................................
 
 
 // Spectator & Scoreboeard
@@ -164,11 +179,11 @@ cl_crosshair_dynamic_splitalpha_outermod "0.500000"                      //Outer
 cl_crosshair_dynamic_maxdist_splitratio "0.350000"                       //Split size ratio (Classic crosshair)....................................
 cl_crosshair_t "false"                                                   //T style.................................................................
 cl_crosshairgap_useweaponvalue "false"                                   //Deployed weapon gap.....................................................
-cl_show_observer_crosshair "2"                                           //Show players crosshairs.................................................[0 - No; 1 - Friend and Party; 2 - Everyone]
+cl_show_observer_crosshair "2"                                           //Show player crosshairs..................................................[0 - No; 1 - Friend and Party; 2 - Everyone]
 cl_observed_bot_crosshair "1"                                            //Show my crosshair when spectating bots (Previous command value's "2")...[0 - Never; 1 - When I can take over the bor; 2 - Always]
 
 
-//Grenade line-up reticle
+// Grenade line-up reticle
 cl_grenadecrosshair_keepusercrosshair "true"                             //Keep regular crosshair..................................................
 cl_grenadecrosshair_flash "true"                                         //Flashbang crosshair.....................................................
 cl_grenadecrosshairdelay_flash "2.000000"                                //Flashbang crosshair delay...............................................
@@ -182,18 +197,19 @@ cl_grenadecrosshair_decoy "true"                                         //Decoy
 cl_grenadecrosshairdelay_decoy "2.000000"                                //Decoy grenades crosscair delay..........................................
 
 
-//Thelemetry
+// Thelemetry
 cl_hud_telemetry_frametime_show "2"                                      //Show frame time and FPS.................................................[0 - Never; 1 - If conditions are poor; 2 - Always]
 cl_hud_telemetry_frametime_poor "100"                                    //Frame time warning threshold............................................
 cl_hud_telemetry_ping_show "2"                                           //Show ping...............................................................[0 - Never; 1 - If conditions are poor; 2 - Always]
-cl_hud_telemetry_net_misdelivery_show "0"                                //Show packet loss / misdelivery..........................................[0 - Never; 1 - If conditions are poor; 2 - Always]
+cl_hud_telemetry_net_misdelivery_show "0"                                //Show network loss / misdelivery.........................................[0 - Never; 1 - If conditions are poor; 2 - Always]
 cl_hud_telemetry_net_misdelivery_poor "5"                                //Packet misdelivery warning threshold....................................
+cl_hud_telemetry_net_quality_graph_show "0"                              //Show network jitter / misdelivery graph.................................[0 - Never; 1 - If conditions are poor; 2 - Always]
 
 
 
 
 
-// ========================== KEYBOARD&MOUSE ============================
+// ========================== KEYBOARD&MOUSE ===========================
 //         All binds are default except: jump; team/chat message
 //                      Useless bind were deleted
 
@@ -220,7 +236,7 @@ m_pitch "0.022000"                                                       //Verti
 zoom_sensitivity_ratio "1.000000"                                        //Zoom sensitivity multiplier	
 
 
-//Movement keys
+// Movement keys
 bind "KEY" "show_loadout_toggle"                                         //Toggle inventory display
 bind "W" "+forward"                                                      //Move forward
 bind "S" "+back"                                                         //Move backward
@@ -242,16 +258,16 @@ bind "G" "drop; nade_mode_false"                                         //Drop 
 bind "F" "+lookatweapon"                                                 //Inspect weapon
 bind "H" "switchhands"                                                   //Switch viemodel L/R hand
 bind "B" "+buymenu"                                                      //Buymenu
-bind "1" "primary_weapon"                                                //Primary weapon
-bind "2" "secondary_weapon"                                              //Secondary weapon
-bind "3" "knife"                                                         //Melee weapon
-bind "5" "bomb"                                                          //Explosives & traps
-bind "6" "he_grenade"                                                    //HE grenade
-bind "7" "flashbang"                                                     //Flashbang
-bind "8" "smoke"                                                         //Smoke grenade
-bind "9" "decoy"                                                         //Decoy grenade
-bind "0" "molotov"                                                       //Molotov cocktail or Incendiary grenades
-bind "4" "zeus"                                                          //Zeus x27
+bind "1" "slot1; nade_mode_false"                                        //Primary weapon
+bind "2" "slot2; nade_mode_false"                                        //Secondary weapon
+bind "3" "slot3; nade_mode_false; +lookatweapon; -lookatweapon"          //Melee weapon
+bind "5" "slot5; nade_mode_false"                                        //Explosives & traps
+bind "KEY" "slot6; nade_mode_true"                                       //HE grenade
+bind "KEY" "slot7; nade_mode_true"                                       //Flashbang
+bind "KEY" "slot8; nade_mode_true"                                       //Smoke grenade
+bind "KEY" "slot9; nade_mode_true"                                       //Decoy grenade
+bind "KEY" "slot10; nade_mode_true"                                      //Molotov cocktail or Incendiary grenades
+bind "4" "slot11; nade_mode_false"                                       //Zeus x27
 bind "T" "+spray_menu"                                                   //Graffiti menu
 
 
@@ -271,67 +287,66 @@ bind "ENTER" "messagemode2"                                              //Team 
 //                                                                       //Chat message (Right SHIFT + ENTER)
 bind "K" "+voicerecord"                                                  //Use microphone
 bind "KEY" "clutch_mode_toggle"                                          //Temporarily disable incoming chat
-bind "P" "callvote starttimeout"                                         //Call timeout
+bind "PAUSE" "callvote starttimeout"                                     //Call timeout
 
 
 
 
 
-// ============================ NADE MODE ===============================
-
-alias "primary_weapon" "slot1; nade_mode_false"
-alias "secondary_weapon" "slot2; nade_mode_false"
-alias "knife" "slot3; nade_mode_false; +lookatweapon; -lookatweapon"
-alias "zeus" "slot11; nade_mode_false"
-alias "bomb" "slot5; nade_mode_false"
-alias "he_grenade" "slot6; nade_mode_true"
-alias "flashbang" "slot7; nade_mode_true"
-alias "smoke" "slot8; nade_mode_true"
-alias "decoy" "slot9; nade_mode_true"
-alias "molotov" "slot10; nade_mode_true"
+// ============================= NADE MODE =============================
+//                  You can find scancodes in README.md
 
 alias "nade_mode_true" "bind MOUSE1 +mouse1_nade_mode; bind MOUSE2 +mouse2_nade_mode; alias -mouse1_nade_mode -attack; alias -mouse2_nade_mode -attack2"
 alias "+mouse1_nade_mode" "+attack; keys_to_nade_mode; alias -mouse1_nade_mode mouse1_nade_mode_false"
 alias "+mouse2_nade_mode" "+attack2; keys_to_nade_mode; alias -mouse2_nade_mode mouse2_nade_mode_false"
 
-alias "keys_to_nade_mode" "bind SCANCODE44 jump-throw; bind SCANCODE8 +forward-jump-throw; bind SCANCODE21 throwaction; bind SCANCODE23 +forward-throw; getpos"
+alias "keys_to_nade_mode" "bind SCANCODE44 +jump-throw; bind SCANCODE8 +forward-jump-throw; bind SCANCODE21 +backward-jump-throw; bind SCANCODE23 +forward-throw; bind SCANCODE5 throwaction; getpos"
 
 alias "mouse1_nade_mode_false" "-attack; nade_mode_false"
 alias "mouse2_nade_mode_false" "-attack2; nade_mode_false"
 
 alias "nade_mode_false" "keys_to_default; mouse_to_defaut"
 alias "keys_to_default" "all_keys_to_default"
-alias "all_keys_to_default" "bind SCANCODE44 +duck-jump; bind SCANCODE8 +use; bind SCANCODE21 +reload; bind SCANCODE23 +spray_menu"
+alias "all_keys_to_default" "bind SCANCODE44 +duck-jump; bind SCANCODE8 +use; bind SCANCODE21 +reload; bind SCANCODE23 +spray_menu; bind SCANCODE5 +buymenu"
 alias "mouse_to_defaut" "bind MOUSE1 +attack; bind MOUSE2 +attack2"
 
 
 // THROW action
-alias "throwaction" "-attack;-attack2"
+alias "throwaction" "echo "multibinds\throwaction\throwaction" | exec"
 
 
 // JUMP-THROW action 
-alias "jump-throw" "+jump;-jump; throwaction"
+alias "+jump-throw" "echo "multibinds\jump-throw\+jump-throw" | exec"
+alias "-jump-throw" "echo "multibinds\jump-throw\-jump-throw" | exec"
 
 
 // FORWARD-THROW action
-alias "+forward-throw" "+forward; throwaction; ft_bug_fix"
-alias "-forward-throw" "-forward; bind SCANCODE23 +spray_menu"
+alias "+forward-throw" "echo "multibinds\forward-throw\+forward-throw" | exec"
+alias "-forward-throw" "echo "multibinds\forward-throw\-forward-throw" | exec"
 
 alias "ft_bug_fix" "alias keys_to_default exept_ft_key"
-alias "exept_ft_key" "bind SCANCODE44 +duck-jump; bind SCANCODE8 +use; bind SCANCODE21 +reload; alias keys_to_default all_keys_to_default"
+alias "exept_ft_key" "bind SCANCODE44 +duck-jump; bind SCANCODE8 +use; bind SCANCODE21 +reload; bind SCANCODE5 +buymenu; alias keys_to_default all_keys_to_default"
 
 
 // FORWARD-JUMP-THROW action
-alias "+forward-jump-throw" "+forward;+jump; throwaction; fjt_bug_fix"
-alias "-forward-jump-throw" "-forward;-jump; bind SCANCODE8 +use"
+alias "+forward-jump-throw" "echo "multibinds\forward-jump-throw\+forward-jump-throw" | exec"
+alias "-forward-jump-throw" "echo "multibinds\forward-jump-throw\-forward-jump-throw" | exec"
 
 alias "fjt_bug_fix" "alias keys_to_default exept_fjt_key"
-alias "exept_fjt_key" "bind SCANCODE44 +duck-jump; bind SCANCODE21 +reload; bind SCANCODE23 +spray_menu; alias keys_to_default all_keys_to_default"
+alias "exept_fjt_key" "bind SCANCODE44 +duck-jump; bind SCANCODE21 +reload; bind SCANCODE23 +spray_menu; bind SCANCODE5 +buymenu; alias keys_to_default all_keys_to_default"
+
+
+// BACKWARD-JUMP-THROW action
+alias "+backward-jump-throw" "echo "multibinds\backward-jump-throw\+backward-jump-throw" | exec"
+alias "-backward-jump-throw" "echo "multibinds\backward-jump-throw\-backward-jump-throw" | exec"
+
+alias "bjt_bug_fix" "alias keys_to_default exept_bjt_key"
+alias "exept_bjt_key" "bind SCANCODE44 +duck-jump; bind SCANCODE8 +use; bind SCANCODE23 +spray_menu; bind SCANCODE8 +buymenu; alias keys_to_default all_keys_to_default"
 
 
 // DUCK-JUMP action
-alias "+duck-jump" "-jump;-duck;+jump;+duck"
-alias "-duck-jump" "-jump;-duck"
+alias "+duck-jump" "echo "multibinds\duck-jump\+duck-jump" | exec"
+alias "-duck-jump" "echo "multibinds\duck-jump\-duck-jump" | exec"
 bind "SPACE" "+duck-jump"
 
 
@@ -341,12 +356,13 @@ bind "SPACE" "+duck-jump"
 // ========================== OTHER ALIASES =============================
 
 // Fast drop bomb
-alias "dropbomb" "slot5; drop; nade_mode_false"
-bind "KEY" "dropbomb"
+alias "+dropbomb" "slot5"
+alias "-dropbomb" "drop; nade_mode_false"
+bind "KEY" "+dropbomb"
 
 
 // Fast nade drop
-bind "CAPSLOCK" "+nade-drop_mode"
+bind "KEY" "+nade-drop_mode"
 alias "+nade-drop_mode" "bind 7 drop_flash; bind 8 drop_smoke; bind 0 drop_molotov; bind 6 drop_he"
 alias "-nade-drop_mode" "bind 7 flashbang; bind 8 smoke; bind 0 molotov; bind 6 he_grenade; slot1; nade_mode_false"
 
