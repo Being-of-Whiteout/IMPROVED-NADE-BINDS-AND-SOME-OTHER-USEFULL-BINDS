@@ -1,0 +1,2 @@
+-forward
+bind "SCANCODE23" "+spray_menu"
