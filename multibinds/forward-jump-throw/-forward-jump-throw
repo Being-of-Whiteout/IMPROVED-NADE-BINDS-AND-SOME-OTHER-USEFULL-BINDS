@@ -1,3 +1,0 @@
--forward
--jump
-bind "SCANCODE8" "+use"
