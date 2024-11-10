@@ -412,10 +412,10 @@ bind "RSHIFT" "+chat"
 
 // ============================ OTHER .SFGs =============================
 
-bind "F8" "exec other_scfg/demoui"                                       //Execution DemoUI binds
+bind "F8" "exec other_cfgs/demoui"                                       //Execution DemoUI binds
 bind "F9" "exec being_of_whiteout"                                       //Executing competitive binds
-bind "F10" "exec other_scfg/practice_binds"                              //Executing practice binds
-bind "F11" "exec other_scfg/practice_server_configuration"               //Executing practice server configuration
+bind "F10" "exec other_cfgs/practice_binds"                              //Executing practice binds
+bind "F11" "exec other_cfgs/practice_server_configuration"               //Executing practice server configuration
 
 
 
