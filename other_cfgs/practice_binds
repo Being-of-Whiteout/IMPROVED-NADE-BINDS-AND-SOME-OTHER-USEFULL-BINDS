@@ -9,7 +9,6 @@ bind "KEY" "map_selection"
 alias "echoing" "echo; echo	======================== CHOOSE THE MAP ========================; echo Press 1 to choose Ancient; echo Press 2 to choose Anubis; echo Press 3 to choose Dust II; echo Press 4 to choose Inferno; echo Press 5 to choose Mirage; echo Press 6 to choose Nuke; Press 7 to choose Vertigo echo" 
 alias "nums_to_maplist" "bind 1 choose_ancient; bind 2 choose_anubis; bind 3 choose_dust2; bind 4 choose_inferno; bind 5 choose_mirage; bind 6 choose_nuke; bind 7 choose_vertigo"
 alias "nums_to_default" "primary_weapon; secondary_weapon; secondary_weapon; knife; zeus; bomb; unbind 7"
-
  
 alias "choose_ancient" "exec other_cfgs/map_ancient_team_queue"
 alias "choose_anubis" "exec other_cfgs/map_anubis_team_queue"
@@ -32,19 +31,16 @@ alias "molotov" "exec other_cfgs/slot10_molotov"
 
 
 // Bots
-bind "-" "bot_add ct"                                                    //Add CT bot
-bind "=" "bot_add_t"                                                     //Add T bot
-bind "BACKSPACE" "bot_kick"                                              //Kick bots
-bind "CTRL" "bot_place"                                                  //Place bot
-bind "K" "toggle bot_crouch true false; say .botduck"                    //Made a bot crouch (refrag.gg: add crouched bot)
-
-bind "KEY" "toggle bot_crouch true false"                                //Bot crouching         
-bind "KEY" "toggle bot_stop 1 0"                                         //Bot stop
+bind "-" "bot_add ct"                                                     //Add CT bot
+bind "=" "bot_add_t"                                                      //Add T bot
+bind "BACKSPACE" "bot_kick"                                               //Kick bots
+bind "KEY" "bot_place"                                                    //Place bot
+bind "KEY" "toggle bot_crouch true false; say .botduck"                   //Made a bot crouch (refrag.gg: add crouched bot)
 
 
 // Nades
-bind "KEY" "sv_rethrow_last_grenade"                                     //Rethrow last grenade
-bind "KEY" "ent_fire smokegrenade_projectile kill; stopsound"            //Erase smokeм
+bind "KEY" "sv_rethrow_last_grenade; say .rethrow"                         //Rethrow last grenade
+bind "KEY" "ent_fire smokegrenade_projectile kill; stopsound; say .clear"  //Erase smoke
 
 
 // Increase time speed  (1st method)
