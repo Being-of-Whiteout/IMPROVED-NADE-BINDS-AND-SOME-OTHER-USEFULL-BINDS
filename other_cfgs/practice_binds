@@ -8,33 +8,35 @@ bind "KEY" "map_selection"
 
 alias "echoing" "echo; echo	======================== CHOOSE THE MAP ========================; echo Press 1 to choose Ancient; echo Press 2 to choose Anubis; echo Press 3 to choose Dust II; echo Press 4 to choose Inferno; echo Press 5 to choose Mirage; echo Press 6 to choose Nuke; Press 7 to choose Vertigo echo" 
 alias "nums_to_maplist" "bind 1 choose_ancient; bind 2 choose_anubis; bind 3 choose_dust2; bind 4 choose_inferno; bind 5 choose_mirage; bind 6 choose_nuke; bind 7 choose_vertigo"
-alias "nums_to_default" "primary_weapon; secondary_weapon; knife; zeus; bomb; unbind 6; unbind 7"
+alias "nums_to_default" "primary_weapon; secondary_weapon; secondary_weapon; knife; zeus; bomb; unbind 7"
 
-alias "choose_ancient" "exec map_ancient"
-alias "choose_anubis" "exec map_anubis"
-alias "choose_dust2" "exec map_dust2"
-alias "choose_inferno" "exec map_inferno"
-alias "choose_mirage" "exec map_mirage"
-alias "choose_nuke" "exec map_nuke"
-alias "choose_vertigo" "exec map_vertigo"
+ 
+alias "choose_ancient" "exec other_cfgs/map_ancient_team_queue"
+alias "choose_anubis" "exec other_cfgs/map_anubis_team_queue"
+alias "choose_dust2" "exec other_cfgs/map_dust2_team_queue"
+alias "choose_inferno" "exec other_cfgs/map_inferno_team_queue"
+alias "choose_mirage" "exec other_cfgs/map_mirage_team_queue"
+alias "choose_nuke" "exec other_cfgs/map_nuke_team_queue"
+alias "choose_vertigo" "exec other_cfgs/map_vertigo_team_queue"
 
-alias "primary_weapon" "echo "multibinds\weapon_slots\primary_weapon" | exec"
-alias "secondary_weapon" "echo "multibinds\weapon_slots\secondary_weapon" | exec"
-alias "knife" "echo "multibinds\weapon_slots\knife" | exec"
-alias "zeus" "echo "multibinds\weapon_slots\zeus" | exec"
-alias "bomb" "echo "multibinds\weapon_slots\bomb" | exec"
-alias "he_grenade" "echo "multibinds\weapon_slots\he_grenade " | exec"
-alias "flashbang" "echo "multibinds\weapon_slots\flashbang" | exec"
-alias "smoke" "echo "multibinds\weapon_slots\smoke" | exec"
-alias "decoy" "echo "multibinds\weapon_slots\decoy" | exec"
-alias "molotov" "echo "multibinds\weapon_slots\molotov" | exec"
+alias "primary_weapon" "exec other_cfgs/slot1_primary_weapon"
+alias "secondary_weapon" "exec other_cfgs/slot2_secondary_weapon"
+alias "knife" "exec other_cfgs/slot3_knife"
+alias "zeus" "exec other_cfgs/slot11_zeus"
+alias "bomb" "exec other_cfgs/slot5_bomb"
+alias "he_grenade" "exec other_cfgs/slot6_he_grenade"
+alias "flashbang" "exec other_cfgs/slot7_flashbang"
+alias "smoke" "exec other_cfgs/slot8_smoke"
+alias "decoy" "exec other_cfgs/slot9_decoy"
+alias "molotov" "exec other_cfgs/slot10_molotov"
 
 
 // Bots
 bind "-" "bot_add ct"                                                    //Add CT bot
 bind "=" "bot_add_t"                                                     //Add T bot
 bind "BACKSPACE" "bot_kick"                                              //Kick bots
-bind "KEY" "bot_place"                                                   //Place bot
+bind "CTRL" "bot_place"                                                  //Place bot
+bind "K" "toggle bot_crouch true false; say .botduck"                    //Made a bot crouch (refrag.gg: add crouched bot)
 
 bind "KEY" "toggle bot_crouch true false"                                //Bot crouching         
 bind "KEY" "toggle bot_stop 1 0"                                         //Bot stop
@@ -57,6 +59,9 @@ bind "KEY" "+timespeedup2"
 
 
 // Noclip
+alias "+noclip" "noclip"
+alias "-noclip" "noclip"
+bind "KEY" "+noclip"
 bind "KEY" "noclip"
 
 
@@ -72,11 +77,11 @@ alias "classic" "say classic viewmodel; viewmodel_presetpos 3; alias viewmodel_p
 bind "KEY" "viewmodel_preset"
 
 
-// Spawn test (example)
+// Spawn test (example for Ancient)
 alias "spawn_test" "team_ct; team_t"
-alias "team_ct" "setpos_player 1 -192.000000 1696.000000 26.053047"
-alias "team_t" "setpos_player 2 -392.000000 -2224.000000 -163.255737"
-bind "KEY" "spawn_test"
+alias "team_ct" "setpos_player 1 -192.000000 1696.000000 26.053043"
+alias "team_t" "setpos_player 4 -520.000000 -2224.000000 -163.255737"
+bind "KEY" "mp_freezetime 3; mp_warmup_start; mp_warmup_end; mp_roundtime_defuse 60; sv_hide_roundtime_until_seconds 0; spawn_test"
 
 bind "KEY" "mp_warmup_start"
 bind "KEY" "mp_warmup_start; mp_warmup_end"
