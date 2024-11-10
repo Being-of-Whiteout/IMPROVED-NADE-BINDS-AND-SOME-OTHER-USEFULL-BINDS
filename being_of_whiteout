@@ -213,8 +213,8 @@ cl_hud_telemetry_net_quality_graph_show "0"                              //Show 
 //         All binds are default except: jump; team/chat message
 //                      Useless bind were deleted
 
-
 unbindall
+
 
 // Analog bindings
 bind "X_AXIS" "rightleft"
@@ -312,41 +312,60 @@ alias "mouse_to_defaut" "bind MOUSE1 +attack; bind MOUSE2 +attack2"
 
 
 // THROW action
-alias "throwaction" "echo "multibinds\throwaction\throwaction" | exec"
+alias "throwaction" "alias t_2 throwaction_t"
+alias "throwaction_t" "reset_t_2;-attack;-attack2"
 
 
 // JUMP-THROW action 
-alias "+jump-throw" "echo "multibinds\jump-throw\+jump-throw" | exec"
-alias "-jump-throw" "echo "multibinds\jump-throw\-jump-throw" | exec"
+alias "+jump-throw" "alias t_2 +jump-throw_t"
+alias "-jump-throw" "alias t_2 -jump-throw_t"
+
+alias "+jump-throw_t" "reset_t_2;+jump;-jump; jt_bug_fix; alias t_2 throwaction_t"
+alias "-jump-throw_t" "reset_t_2; bind SCANCODE44 +duck-jump"
+
+alias "jt_bug_fix" "alias keys_to_default exept_jt_key"
+alias "exept_jt_key" "bind SCANCODE23 +spray_menu; bind SCANCODE8 +use; bind SCANCODE21 +reload; bind SCANCODE5 +buymenu; alias keys_to_default all_keys_to_default"
 
 
 // FORWARD-THROW action
-alias "+forward-throw" "echo "multibinds\forward-throw\+forward-throw" | exec"
-alias "-forward-throw" "echo "multibinds\forward-throw\-forward-throw" | exec"
+alias "+forward-throw" "alias t_2 +forward-throw_t"
+alias "-forward-throw" "alias t_2 -forward-throw_t"
+
+alias "+forward-throw_t" "reset_t_2; +forward; ft_bug_fix; alias t_2 throwaction_t"
+alias "-forward-throw_t" "reset_t_2; -forward; bind SCANCODE23 +spray_menu"
 
 alias "ft_bug_fix" "alias keys_to_default exept_ft_key"
 alias "exept_ft_key" "bind SCANCODE44 +duck-jump; bind SCANCODE8 +use; bind SCANCODE21 +reload; bind SCANCODE5 +buymenu; alias keys_to_default all_keys_to_default"
 
 
 // FORWARD-JUMP-THROW action
-alias "+forward-jump-throw" "echo "multibinds\forward-jump-throw\+forward-jump-throw" | exec"
-alias "-forward-jump-throw" "echo "multibinds\forward-jump-throw\-forward-jump-throw" | exec"
+alias "+forward-jump-throw" "alias t_2 +forward-jump-throw_t"
+alias "-forward-jump-throw" "alias t_2 -forward-jump-throw_t"
+
+alias "+forward-jump-throw_t" "reset_t_2; +forward;+jump;-jump; fjt_bug_fix; alias t_2 throwaction_t"
+alias "-forward-jump-throw_t" "reset_t_2; -forward; bind SCANCODE8 +use"
 
 alias "fjt_bug_fix" "alias keys_to_default exept_fjt_key"
 alias "exept_fjt_key" "bind SCANCODE44 +duck-jump; bind SCANCODE21 +reload; bind SCANCODE23 +spray_menu; bind SCANCODE5 +buymenu; alias keys_to_default all_keys_to_default"
 
 
 // BACKWARD-JUMP-THROW action
-alias "+backward-jump-throw" "echo "multibinds\backward-jump-throw\+backward-jump-throw" | exec"
-alias "-backward-jump-throw" "echo "multibinds\backward-jump-throw\-backward-jump-throw" | exec"
+alias "+backward-jump-throw" "alias t_2 +backward-jump-throw_t"
+alias "-backward-jump-throw" "alias t_2 -backward-jump-throw_t"
+
+alias "+backward-jump-throw_t" "reset_t_2; +back;+jump;-jump; bjt_bug_fix; alias t_2 throwaction_t"
+alias "-backward-jump-throw_t" "reset_t_2; -back; bind SCANCODE21 +reload"
 
 alias "bjt_bug_fix" "alias keys_to_default exept_bjt_key"
-alias "exept_bjt_key" "bind SCANCODE44 +duck-jump; bind SCANCODE8 +use; bind SCANCODE23 +spray_menu; bind SCANCODE8 +buymenu; alias keys_to_default all_keys_to_default"
+alias "exept_bjt_key" "bind SCANCODE44 +duck-jump; bind SCANCODE8 +use; bind SCANCODE23 +spray_menu; bind SCANCODE5 +buymenu; alias keys_to_default all_keys_to_default"
 
 
 // DUCK-JUMP action
-alias "+duck-jump" "echo "multibinds\duck-jump\+duck-jump" | exec"
-alias "-duck-jump" "echo "multibinds\duck-jump\-duck-jump" | exec"
+alias "+duck-jump" "alias t_2 +duck-jump_t"
+alias "-duck-jump" "alias t_2 -duck-jump_t"
+
+alias "+duck-jump_t" "reset_t_2; -duck;-jump;+duck;+jump"
+alias "-duck-jump_t" "reset_t_2; -duck;-jump"
 bind "SPACE" "+duck-jump"
 
 
@@ -382,7 +401,7 @@ alias "+lastinv" "slot3"
 alias "-lastinv" "slot1; nade_mode_false"
 
 
-// Message to everyone
+// Message to everyone (doesn't work in match ending menu)
 alias "+chat" "bind ENTER messagemode"
 alias "-chat" "bind ENTER messagemode2"
 bind "RSHIFT" "+chat"
@@ -393,10 +412,10 @@ bind "RSHIFT" "+chat"
 
 // ============================ OTHER .SFGs =============================
 
-bind "F8" "exec demoui"                                                  //Execution DemoUI binds
+bind "F8" "exec other_scfg/demoui"                                       //Execution DemoUI binds
 bind "F9" "exec being_of_whiteout"                                       //Executing competitive binds
-bind "F10" "exec practice_binds"                                         //Executing practice binds
-bind "F11" "exec practice_server_configuration"                          //Executing practice server configuration
+bind "F10" "exec other_scfg/practice_binds"                              //Executing practice binds
+bind "F11" "exec other_scfg/practice_server_configuration"               //Executing practice server configuration
 
 
 
