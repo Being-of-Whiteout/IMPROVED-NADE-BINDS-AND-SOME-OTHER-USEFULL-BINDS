@@ -260,7 +260,7 @@ bind "H" "switchhands"                                                   //Switc
 bind "B" "+buymenu"                                                      //Buymenu
 bind "1" "slot1; nade_mode_false"                                        //Primary weapon
 bind "2" "slot2; nade_mode_false"                                        //Secondary weapon
-bind "3" "slot3; nade_mode_false; +lookatweapon; -lookatweapon"          //Melee weapon
+bind "3" "slot3; nade_mode_false; alias t_2 lookatweapon_t"              //Melee weapon
 bind "5" "slot5; nade_mode_false"                                        //Explosives & traps
 bind "KEY" "slot6; nade_mode_true"                                       //HE grenade
 bind "KEY" "slot7; nade_mode_true"                                       //Flashbang
@@ -380,6 +380,26 @@ alias "-dropbomb" "drop; nade_mode_false"
 bind "KEY" "+dropbomb"
 
 
+// Fast weapon switch after AWP shot
+alias "+lastinv" "slot3"
+alias "-lastinv" "slot1; nade_mode_false"
+
+
+// Inspect weapon
+alias "lookatweapon_t" "reset_t_2; +lookatweapon;-lookatweapon"
+
+
+// Message to everyone (doesn't work in match ending menu)
+alias "+chat" "bind ENTER messagemode"
+alias "-chat" "bind ENTER messagemode2"
+bind "RSHIFT" "+chat"
+
+
+// Buymenu method as HOLD
+alias "+buymenu" "buymenu"
+alias "-buymenu" "buymenu"
+
+
 // Fast nade drop
 bind "KEY" "+nade-drop_mode"
 alias "+nade-drop_mode" "bind 7 drop_flash; bind 8 drop_smoke; bind 0 drop_molotov; bind 6 drop_he"
@@ -389,22 +409,6 @@ alias "drop_flash" "slot7; drop"
 alias "drop_smoke" "slot8; drop"
 alias "drop_molotov" "slot10; drop"
 alias "drop_he" "slot6; drop"
-
-
-// Buymenu method as HOLD
-alias "+buymenu" "buymenu"
-alias "-buymenu" "buymenu"
-
-
-// Fast weapon switch after AWP shot
-alias "+lastinv" "slot3"
-alias "-lastinv" "slot1; nade_mode_false"
-
-
-// Message to everyone (doesn't work in match ending menu)
-alias "+chat" "bind ENTER messagemode"
-alias "-chat" "bind ENTER messagemode2"
-bind "RSHIFT" "+chat"
 
 
 
