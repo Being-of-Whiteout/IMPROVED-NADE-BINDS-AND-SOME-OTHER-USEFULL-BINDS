@@ -4,6 +4,9 @@
 
 // Main settings
 sv_cheats "true"
+sv_allow_annotations "true"
+cl_tickpacket_recvmargin_enable "0"
+cl_join_advertise "2"
 bot_kick
 
 
@@ -13,8 +16,8 @@ game_type "0"
 
 
 // Molotov disappears faster and deals less damage
-inferno_flame_lifetime "5"
-inferno_damage "5"
+inferno_flame_lifetime "7"
+inferno_damage "40"
 
 
 // Players
@@ -34,6 +37,9 @@ sv_grenade_trajectory_prac_trailtime "5"
 sv_ignoregrenaderadio "1"
 mp_respawn_on_death_ct "1"
 mp_respawn_on_death_t "1"
+sv_regeneration_force_on "1"
+sv_noclipspeed "1750"
+
 
 // Dropping
 weapon_auto_cleanup_time "10"
@@ -45,6 +51,7 @@ mp_death_drop_gun "1"
 mp_death_drop_healthshot "0"
 mp_death_drop_taser "0"
 mp_drop_knife_enable "1"
+
 
 // Buying & Money
 mp_afterroundmoney "0"
@@ -58,6 +65,7 @@ mp_startmoney "1000000000"
 mp_teamcashawards "0"
 mp_weapons_allow_typecount "-1"
 sv_buy_status_override "0"
+
 
 // Rounds
 mp_force_pick_time "0"
@@ -74,17 +82,24 @@ mp_roundtime_defuse "0"
 mp_roundtime_hostage "0"
 mp_spawnprotectiontime "0"
 mp_team_intro_time "0"
-sv_hide_roundtime_until_seconds "1"
+sv_hide_roundtime_until_seconds "0"
+
 
 // Weapons
 ammo_grenade_limit_total "6"
-mp_ct_default_grenades "weapon_incgrenade weapon_hegrenade weapon_smokegrenade weapon_flashbang weapon_flashbang weapon_decoy"     
+mp_ct_default_grenades "weapon_incgrenade weapon_hegrenade weapon_smokegrenade weapon_flashbang weapon_decoy"     
 mp_ct_default_primary "weapon_m4a1_silencer"
-mp_t_default_grenades "weapon_molotov weapon_hegrenade weapon_smokegrenade weapon_flashbang weapon_flashbang weapon_decoy"
+mp_ct_default_secondary "weapon_deagle"
+mp_t_default_grenades "weapon_molotov weapon_hegrenade weapon_smokegrenade weapon_flashbang weapon_decoy"
 mp_t_default_primary "weapon_ak47"
+mp_t_default_secondary "weapon_deagle"
 mp_defuser_allocation "2"
 mp_free_armor "2"
 sv_infinite_ammo "1"
+
+give weapon_healthshot
+give weapon_taser
+
 
 // Infinite warmup
 mp_warmuptime "100000"
@@ -92,10 +107,6 @@ mp_warmup_offline_enabled "1"
 mp_warmup_pausetimer "1"
 mp_warmup_start
 
-give weapon_healthshot
-give weapon_taser
 
-sv_regeneration_force_on "1"
-sv_noclipspeed "1750"
 
-cl_tickpacket_recvmargin_enable "0"
+say "Practice configuration has been executed."
