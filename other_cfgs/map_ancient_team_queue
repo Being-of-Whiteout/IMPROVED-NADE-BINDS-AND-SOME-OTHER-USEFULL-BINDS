@@ -1,0 +1,49 @@
+
+// ========================================================================================================= THIS IS DISCORD EXCLUSIVE .CFG OF BEING OF WHITEOUT =========================================================================================================
+
+alias "ancient_t_pos1_short" "say POSITION 1 - B rush SHORT smoke (WATCH THE VIDEO).; setpos_exact -520.000000 -2224.000000 -163.255737; setang -38.235962 48.136185 0.000000; alias previous_smoke ancient_t_pos1_short; alias next_smoke ancient_t_pos1_short; alias previous_spawn ancient_t_pos5_anti_molly; alias next_spawn ancient_t_pos2"
+
+alias "ancient_t_pos2" "say POSITION 2.; setpos_exact -392.000000 -2224.000000 -163.255737; setang_exact 0.000000 90.000000 0.000000; alias previous_smoke ancient_t_pos2; alias next_smoke ancient_t_pos2; alias previous_spawn ancient_t_pos1_short; alias next_spawn ancient_t_pos3_window"
+
+alias "ancient_t_pos3_donut" "say POSITION 3 - Instant DONUT smoke (aim with CROSSHAIR as shown then FORWARD-JUMP-THROW bind).; setpos_exact -584.000000 -2288.000000 -162.422363; setang -31.658134 96.512276 0.000000; alias previous_smoke ancient_t_pos3_cheetah_planb; alias next_smoke ancient_t_pos3_window"
+alias "ancient_t_pos3_window" "say POSITION 3 - Instant WINDOW smoke (aim with CROSSHAIR as shown then FORWARD-JUMP-THROW bind).; setpos_exact -584.000000 -2288.000000 -162.422363; setang -34.166126 88.416046 0.000000; alias previous_smoke ancient_t_pos3_donut; alias next_smoke ancient_t_pos3_cheetah_planb; alias previous_spawn ancient_t_pos2; alias next_spawn ancient_t_pos4_heaven"
+alias "ancient_t_pos3_cheetah_planb" "say POSITION 3 - Instant CHEETAH smoke (aim with CROSSHAIR as shown, step to the left then JUMP-THROW bind).; setpos_exact -584.000000 -2288.000000 -162.422363; setang -56.474094 64.105904 0.000000; alias previous_smoke ancient_t_pos3_window; alias next_smoke ancient_t_pos3_donut"
+
+alias "ancient_t_pos4_heaven" "say POSITION 4 - Instant HEAVEN smoke (aim with CROSSHAIR as shown then JUMP-THROW bind).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -26.290197 75.986130 0.000000; alias previous_smoke ancient_t_pos4_long; alias next_smoke ancient_t_pos4_lane; alias previous_spawn ancient_t_pos3_window; alias next_spawn ancient_t_pos5_anti_molly"
+alias "ancient_t_pos4_lane" "say POSITION 4 - Instant LANE smoke (aim with CROSSHAIR as shown then JUMP-THROW bind).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -26.598179 72.443604 0.000000; alias previous_smoke ancient_t_pos4_heaven; alias next_smoke ancient_t_pos4_long"
+alias "ancient_t_pos4_long" "say POSITION 4 - B rush LONG smoke (WATCH THE VIDEO).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -72.732368 57.417576 0.000000; alias previous_smoke ancient_t_pos4_lane; alias next_smoke ancient_t_pos4_heaven"
+
+alias "ancient_t_pos5_anti_molly" "say POSITION 5 - Instant anti-molly ELBOW smoke (aim with THE PIN OF THE NADE as shown then JUMP-THROW bind).; setpos_exact -328.000000 -2288.000000 -163.255737; setang -57.706039 108.158875 0.000000; alias previous_smoke ancient_t_pos5_window_planb; alias next_smoke ancient_t_pos5_pressure; alias previous_spawn ancient_t_pos4_heaven; alias next_spawn ancient_t_pos1_short"
+alias "ancient_t_pos5_pressure" "say POSITION 5 - Instant MID pressure smoke (aim with CROSSHAIR as shown then JUMP-THROW bind).; setpos_exact -328.000000 -2288.000000 -163.255737; setang -18.133545 109.299095 0.000000; alias previous_smoke ancient_t_pos5_anti_molly; alias next_smoke ancient_t_pos5_window_planb"
+alias "ancient_t_pos5_window_planb" "say POSITION 5 - Instant WINDOW smoke (aim with CROSSHAIR as shown then FORWARD-JUMP-THROW bind).; setpos_exact -328.000000 -2288.000000 -163.255737; setang -31.416092 94.562355 0.000000; alias previous_smoke ancient_t_pos5_pressure; alias next_smoke ancient_t_pos5_anti_molly"
+
+bind "," "ancient_t_pos3_window"
+
+
+
+alias "ancient_ct_pos1_molly" "say POSITION 1 - Fast LANE molly (WATCH THE VIDEO).; setpos_exact -192.000000 1696.000000 26.053043; setang 8.932109 -94.663635 0.000000; alias previous_smoke ancient_ct_pos1_molly; alias next_smoke ancient_ct_pos1_molly; alias previous_spawn ancient_ct_pos5_elbow; alias next_spawn ancient_ct_pos2_bmain"
+
+alias "ancient_ct_pos2_bmain" "say POSITION 2 - Instant B-MAIN smoke (run 'TIL THE PLANT then JUMP-THROW bind).; setpos_exact -256.000000 1728.000000 25.602573; setang -22.725958 -49.343513 0.000000; alias previous_smoke ancient_ct_pos2_bmain; alias next_smoke ancient_ct_pos2_bmain; alias previous_spawn ancient_ct_pos1_molly; alias next_spawn ancient_ct_pos3_lane"
+
+alias "ancient_ct_pos3_lane" "say POSITION 3 - Instant LANE smoke (aim with CROSSHAIR as shown, walk 'TIL THE WHITE LINE then JUMP-THROW bind).; setpos_exact -352.000000 1728.000000 28.81325; setang -31.394253 -76.535988 0.000000; alias previous_smoke ancient_ct_pos3_lane; alias next_smoke ancient_ct_pos3_lane; alias previous_spawn ancient_ct_pos2_bmain; alias next_spawn ancient_ct_pos4_heaven"
+
+alias "ancient_ct_pos4_heaven" "say POSITION 4 - Instant HEAVEN smoke (aim with CROSSHAIR as shown, walk 'TIL THE WHITE LINE then JUMP-THROW bind).; setpos_exact -448.000000 1728.000000 30.739719; setang -30.381651 -82.190086 0.000000; alias previous_smoke ancient_ct_pos4_heaven; alias next_smoke ancient_ct_pos4_heaven; alias previous_spawn ancient_ct_pos3_lane; alias next_spawn ancient_ct_pos5_elbow"
+
+alias "ancient_ct_pos5_elbow" "say POSITION 5 - Instant ELBOW smoke (aim with CROSSHAIR as shown, a step WALKING then JUMP-THROW bind).; setpos_exact -512.000000 1696.000000 26.837200; setang -33.021564 -102.122047 0.000000; alias previous_smoke ancient_ct_pos5_elbow; alias next_smoke ancient_ct_pos5_elbow; alias previous_spawn ancient_ct_pos4_heaven; alias next_spawn ancient_ct_pos1_molly"
+
+bind "." "ancient_ct_pos5_elbow"
+
+
+
+bind "UPARROW" "next_spawn"
+bind "DOWNARROW" "previous_spawn"
+bind "RIGHTARROW" "next_smoke"
+bind "LEFTARROW" "previous_smoke"
+
+
+
+nums_to_default
+
+
+
+say "Ancient has been executed."
