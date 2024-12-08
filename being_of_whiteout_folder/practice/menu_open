@@ -1,0 +1,18 @@
+
+// Map selection
+bind "SCANCODE30" "exec being_of_whiteout/maps/map_ancient_team_queue"
+bind "SCANCODE31" "exec being_of_whiteout/maps/map_anubis_team_queue"
+bind "SCANCODE32" "exec being_of_whiteout/maps/map_dust2_team_queue"
+bind "SCANCODE33" "exec being_of_whiteout/maps/map_inferno_team_queue"
+bind "SCANCODE34" "exec being_of_whiteout/maps/map_mirage_team_queue"
+bind "SCANCODE35" "exec being_of_whiteout/maps/map_nuke_team_queue"
+bind "SCANCODE36" "exec being_of_whiteout/maps/map_vertigo_team_queue"
+
+// Togglable commands
+bind "SCANCODE5" "toggle_buddha"
+bind "SCANCODE6" "toggle_camera"
+bind "SCANCODE11" "toggle cl_draw_only_deathnotices true false"
+bind "SCANCODE12" "toggle_impacts"
+bind "SCANCODE19" "toggle_penetration"
+bind "SCANCODE21" "toggle_regeneration"
+bind "SCANCODE23" "toggle_trajectory"
