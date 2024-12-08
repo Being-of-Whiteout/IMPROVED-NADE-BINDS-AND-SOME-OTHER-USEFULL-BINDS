@@ -1,0 +1,19 @@
+
+// Map selection
+bind "SCANCODE30" "slot1; nade_mode_false"
+bind "SCANCODE31" "slot2; nade_mode_false"
+bind "SCANCODE32" "slot3; nade_mode_false; alias t_2 lookatweapon_t"
+bind "SCANCODE33" "slot11; nade_mode_false"
+bind "SCANCODE34" "slot5; nade_mode_false"
+unbind "SCANCODE36"
+unbind "SCANCODE37"
+
+
+// Togglable commands
+bind "SCANCODE5" "+buymenu"
+unbind "SCANCODE6" ""
+bind "SCANCODE11" "switchhands"
+unbind "SCANCODE12" ""
+unbind "SCANCODE19" ""
+bind "SCANCODE21" "rethrow"
+bind "SCANCODE23" "+spray_menu"
