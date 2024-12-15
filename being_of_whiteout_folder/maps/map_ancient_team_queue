@@ -9,7 +9,7 @@ alias "ancient_t_pos3_donut" "say POSITION 3 - Instant DONUT smoke (aim with CRO
 alias "ancient_t_pos3_window" "say POSITION 3 - Instant WINDOW smoke (aim with CROSSHAIR as shown then FORWARD-JUMP-THROW bind).; setpos_exact -584.000000 -2288.000000 -162.422363; setang -34.166126 88.416046 0.000000; alias previous_smoke ancient_t_pos3_donut; alias next_smoke ancient_t_pos3_cheetah_planb; alias previous_spawn ancient_t_pos2; alias next_spawn ancient_t_pos4_heaven"
 alias "ancient_t_pos3_cheetah_planb" "say POSITION 3 - Instant CHEETAH smoke (aim with CROSSHAIR as shown then JUMP-THROW bind).; setpos_exact -584.000000 -2288.000000 -162.422363; setang -56.694183 64.744003 0.000000; alias previous_smoke ancient_t_pos3_window; alias next_smoke ancient_t_pos3_donut"
 
-alias "ancient_t_pos4_heaven" "say POSITION 4 - Instant HEAVEN smoke (aim with CROSSHAIR as shown then JUMP-THROW bind).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -26.290197 75.986130 0.000000; alias previous_smoke ancient_t_pos4_long; alias next_smoke ancient_t_pos4_lane; alias previous_spawn ancient_t_pos3_window; alias next_spawn ancient_t_pos5_anti_molly"
+alias "ancient_t_pos4_heaven" "say POSITION 4 - Instant HEAVEN smoke (CROUCH, aim with CROSSHAIR as shown, STAND UP then JUMP-THROW bind).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -26.928083 77.306343 0.000000; alias previous_smoke ancient_t_pos4_long; alias next_smoke ancient_t_pos4_lane; alias previous_spawn ancient_t_pos3_window; alias next_spawn ancient_t_pos5_anti_molly"
 alias "ancient_t_pos4_lane" "say POSITION 4 - Instant LANE smoke (aim with CROSSHAIR as shown then JUMP-THROW bind).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -26.686253 71.036179 0.000000; alias previous_smoke ancient_t_pos4_heaven; alias next_smoke ancient_t_pos4_long"
 alias "ancient_t_pos4_long" "say POSITION 4 - B rush LONG smoke (WATCH THE VIDEO).; setpos_exact -456.000000 -2288.000000 -163.255737; setang -72.732368 57.417576 0.000000; alias previous_smoke ancient_t_pos4_lane; alias next_smoke ancient_t_pos4_heaven"
 
@@ -156,10 +156,6 @@ alias "d51" "mp_warmup_start; mp_warmup_end; setpos_player 1 -512.000000 1696.00
 alias "d52" "mp_warmup_start; mp_warmup_end; setpos_player 1 -512.000000 1696.000000 26.837200; setpos_player 4 -256.000000 1728.000000 25.602573"
 alias "d53" "mp_warmup_start; mp_warmup_end; setpos_player 1 -512.000000 1696.000000 26.837200; setpos_player 4 -352.000000 1728.000000 28.81325"
 alias "d54" "mp_warmup_start; mp_warmup_end; setpos_player 1 -512.000000 1696.000000 26.837200; setpos_player 4 -448.000000 1728.000000 30.739719"
-
-
-
-nums_to_default
 
 
 
