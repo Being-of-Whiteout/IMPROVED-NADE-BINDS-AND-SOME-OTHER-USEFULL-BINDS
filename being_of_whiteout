@@ -287,6 +287,7 @@ bind "M" "teammenu"                                                      //Choos
 bind "`" "toggleconsole"                                                 //Toggle console
 bind "ESCAPE" "cancelselect"                                             //Cancel select
 bind "HOME" "disconnect; exec being_of_whiteout"                         //Disconnect (this key resets all practice bind to your ones)
+bind "END" "quit"                                                        //Quit the game
 
 
 // Communication options
@@ -308,7 +309,7 @@ alias "nade_mode_true" "bind MOUSE1 +mouse1_nade_mode; bind MOUSE2 +mouse2_nade_
 alias "+mouse1_nade_mode" "+attack; keys_to_nade_mode; alias -mouse1_nade_mode mouse1_nade_mode_false"
 alias "+mouse2_nade_mode" "+attack2; keys_to_nade_mode; alias -mouse2_nade_mode mouse2_nade_mode_false"
 
-alias "keys_to_nade_mode" "bind SCANCODE44 +jump-throw; bind SCANCODE8 +forward-jump-throw; bind SCANCODE21 +backward-jump-throw; bind SCANCODE23 +forward-throw; bind SCANCODE5 throwaction; getpos"
+alias "keys_to_nade_mode" "bind SCANCODE44 +jump_throw; bind SCANCODE8 +forward_jump_throw; bind SCANCODE21 +backward_jump_throw; bind SCANCODE23 +forward_throw; bind SCANCODE5 throwaction; getpos"
 alias "mouse1_nade_mode_false" "-attack; nade_mode_false"
 alias "mouse2_nade_mode_false" "-attack2; nade_mode_false"
 
