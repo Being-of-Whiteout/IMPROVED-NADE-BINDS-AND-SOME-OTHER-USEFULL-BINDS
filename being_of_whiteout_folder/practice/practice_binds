@@ -16,8 +16,8 @@ bind "KEY" "bot_place; say .bot"                                         //Place
 bind "KEY" "toggle bot_crouch true false; say .botduck"                  //Made a bot crouch (refrag.gg: add crouched bot)
 
 
-// Rethrow las grenade
-alias "keys_to_default" "bind SCANCODE44 +duck-jump; bind SCANCODE8 +use; bind SCANCODE21 +reload; bind SCANCODE23 +spray_menu; bind SCANCODE5 +buymenu"
+// Rethrow last grenade
+alias "keys_to_default" "bind SCANCODE44 +duck_jump; bind SCANCODE8 +use; bind SCANCODE21 +reload; bind SCANCODE23 +spray_menu; bind SCANCODE5 +buymenu"
 alias "rethrow" "sv_rethrow_last_grenade; say .rethrow"
 bind "R" "rethrow"
 
