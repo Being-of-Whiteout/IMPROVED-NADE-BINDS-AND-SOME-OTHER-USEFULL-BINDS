@@ -13,4 +13,4 @@ reset_t_2
 reset_t
 
 sv_cheats 1
-exec_async other_cfgs/ruby_rain/setup_async
+exec_async being_of_whiteout/ruby_rain/setup_async
