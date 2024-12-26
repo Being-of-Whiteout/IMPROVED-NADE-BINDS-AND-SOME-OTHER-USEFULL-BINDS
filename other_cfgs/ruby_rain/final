@@ -1,5 +1,0 @@
-echo config expired
-echo "other_cfgs/ruby_rain/ruby_rain" in lobby to re-enable
-
-// add whatever you want here to alert you that config died
-say "Ruby Rain's configuration stopped working."
